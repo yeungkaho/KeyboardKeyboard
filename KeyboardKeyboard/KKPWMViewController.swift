@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  KKPWMViewController.swift
 //  KeyboardKeyboard
 //
-//  Created by Yeung Ka Ho on 16/2/19.
+//  Created by 杨嘉浩 on 16/2/22.
 //  Copyright © 2016年 TYKH. All rights reserved.
 //
 
@@ -10,19 +10,27 @@ import Cocoa
 import AudioKit
 
 
-class ViewController: NSViewController {
+class KKPWMViewController: NSViewController {
     
-    let instrument = KKInstrument()
+    let instrument = AKPWMSynth(voiceCount: 8)
+
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        instrument.pulseWidth = 0.5
+        instrument.decayDuration = 0.0
+        instrument.attackDuration = 0.0
+        instrument.releaseDuration = 0.1
+        instrument.volume = 0.4
+        instrument.sustainLevel = 1
+    }
+    
+    
+    override func viewWillAppear() {
+        KKInstrument.sharedInstance.instrument = instrument
+    }
     
     override var acceptsFirstResponder: Bool { return true }
-
-    override func keyUp(theEvent: NSEvent) {
-        instrument.keyUp(theEvent)
-    }
-    
-    override func keyDown(theEvent: NSEvent) {
-        instrument.keyDown(theEvent)
-    }
 
     @IBOutlet weak var volumeLabel: NSTextField!
     @IBAction func volumeSliderSlid(sender: NSSlider) {
@@ -40,7 +48,7 @@ class ViewController: NSViewController {
     @IBAction func attackDurationSliderSlid(sender: NSSlider) {
         instrument.attackDuration = sender.doubleValue
         attackDurationLabel.stringValue = String(format:"attackDuration:%.6f",sender.doubleValue)
-
+        
     }
     
     @IBOutlet weak var decayDurationLabel: NSTextField!

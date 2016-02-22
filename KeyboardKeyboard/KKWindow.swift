@@ -13,9 +13,9 @@ class KKWindow: NSWindow {
     override var canBecomeMainWindow: Bool { return true }
     override var canBecomeKeyWindow: Bool { return true }
     override func keyDown(theEvent: NSEvent) {
-        contentViewController?.keyDown(theEvent)
+        KKInstrument.sharedInstance.keyDown(theEvent)
     }
     override func keyUp(theEvent: NSEvent) {
-        contentViewController?.keyUp(theEvent)
+        KKInstrument.sharedInstance.keyUp(theEvent)
     }
 }

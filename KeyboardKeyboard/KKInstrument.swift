@@ -11,6 +11,8 @@ import AudioKit
 
 class KKInstrument {
     
+    static let sharedInstance = KKInstrument()
+    
     let keyMap:Dictionary<UInt16,Int> = [
         6:0,
         1:1,
@@ -52,59 +54,26 @@ class KKInstrument {
         51:32,
         42:33
     ]
-
-    var instrument:AKPWMSynth!
     
     var activeNotesByKeyCode = Dictionary<UInt16,Int>()
     
-    var keyStatus = [UInt16]()
-    
     var octaveOffset = 5
     
-    var volume:Double {
-        set {
-            instrument.volume = newValue;
+    var token: dispatch_once_t = 0
+    
+    var instrument:AKPolyphonicInstrument? {
+        didSet{
+            AudioKit.stop()
+            for (_,note) in activeNotesByKeyCode{
+                oldValue!.stopNote(note)
+            }
+            activeNotesByKeyCode.removeAll()
+            AudioKit.output = instrument
+            AudioKit.start()
         }
-        get {
-            return instrument.volume
-        }
     }
     
-    var pulseWidth:Double {
-        set {instrument.pulseWidth = newValue;}
-        get {return instrument.pulseWidth}
-    }
-    
-    var decayDuration:Double {
-        set {instrument.decayDuration = newValue;}
-        get {return instrument.decayDuration}
-    }
-    
-    var attackDuration:Double {
-        set {instrument.attackDuration = newValue}
-        get {return instrument.attackDuration}
-    }
-    
-    var releaseDuration:Double {
-        set {instrument.releaseDuration = newValue}
-        get {return instrument.releaseDuration}
-    }
-    
-    var sustainLevel:Double {
-        set {instrument.sustainLevel = newValue}
-        get {return instrument.sustainLevel}
-    }
-    
-    init () {
-        instrument = AKPWMSynth(voiceCount:8)
-        instrument.pulseWidth = 0.5
-        instrument.decayDuration = 0.0
-        instrument.attackDuration = 0.0
-        instrument.releaseDuration = 0.1
-        instrument.volume = 0.4
-        instrument.sustainLevel = 1
-        AudioKit.output = instrument
-        AudioKit.start()
+    private init () {
     }
     
     func keyUp(theEvent: NSEvent) {
@@ -113,7 +82,7 @@ class KKInstrument {
         }
         
         if let note = activeNotesByKeyCode[theEvent.keyCode] {
-            instrument.stopNote(note)
+            instrument!.stopNote(note)
         }
         
         activeNotesByKeyCode.removeValueForKey(theEvent.keyCode)
@@ -146,7 +115,7 @@ class KKInstrument {
         
         let noteToPlay = keyMap[theEvent.keyCode]! + octaveOffset * 12
         activeNotesByKeyCode[theEvent.keyCode] = noteToPlay
-        instrument.playNote(noteToPlay,velocity:127)
+        instrument!.playNote(noteToPlay,velocity:127)
         
     }
 }
