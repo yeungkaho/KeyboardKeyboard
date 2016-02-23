@@ -143,6 +143,9 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gn6-2E-hIC" userLabel="Attack Duration Slider">
                                 <rect key="frame" x="74" y="214" width="245" height="20"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" tickMarkPosition="above" sliderType="linear" id="Qdl-59-KjX"/>
+                                <connections>
+                                    <action selector="attackDurationSliderSlid:" target="XfG-lQ-9wD" id="Mso-Qo-DvG"/>
+                                </connections>
                             </slider>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-WV-DCh">
                                 <rect key="frame" x="74" y="191" width="245" height="17"/>
