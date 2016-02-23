@@ -89,8 +89,8 @@ class KKInstrument {
     }
     
     func keyDown(theEvent: NSEvent) {
-        if theEvent.ARepeat {
-            //ignore repeats
+        if theEvent.ARepeat || theEvent.modifierFlags.contains(.CommandKeyMask){
+            //ignore repeats or command key shortcuts
             return
         }
         
