@@ -106,6 +106,14 @@ class KKInstrument {
                 octaveOffset -= 1
             }
             return
+        } else if theEvent.keyCode == 53 {
+            //esc:kills all sound
+            for (_, note) in activeNotesByKeyCode{
+                instrument?.stopNote(note)
+            }
+            activeNotesByKeyCode.removeAll()
+            AudioKit.stop()
+            AudioKit.start()
         }
         
         if keyMap[theEvent.keyCode] == nil {

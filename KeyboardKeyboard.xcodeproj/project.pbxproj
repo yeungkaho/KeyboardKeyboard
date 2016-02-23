@@ -14,7 +14,8 @@
 		525873F51C76EA6D003E9DBB /* KKInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873F41C76EA6D003E9DBB /* KKInstrument.swift */; };
 		525873F71C7B1B05003E9DBB /* KKPWMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873F61C7B1B05003E9DBB /* KKPWMViewController.swift */; };
 		525873F91C7B1B77003E9DBB /* KKSawtoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873F81C7B1B77003E9DBB /* KKSawtoothViewController.swift */; };
-		525873FD1C7B1EEC003E9DBB /* KKTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873FC1C7B1EEC003E9DBB /* KKTabViewController.swift */; };
+		525873FF1C7C3E65003E9DBB /* KKSineWaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873FE1C7C3E65003E9DBB /* KKSineWaveViewController.swift */; };
+		525874011C7C4042003E9DBB /* KKTriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525874001C7C4042003E9DBB /* KKTriangleViewController.swift */; };
 		5298263E92FBC20B920FA25F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B07BC4549A6F0B9058B200 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +30,8 @@
 		525873F41C76EA6D003E9DBB /* KKInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKInstrument.swift; sourceTree = "<group>"; };
 		525873F61C7B1B05003E9DBB /* KKPWMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKPWMViewController.swift; sourceTree = "<group>"; };
 		525873F81C7B1B77003E9DBB /* KKSawtoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKSawtoothViewController.swift; sourceTree = "<group>"; };
-		525873FC1C7B1EEC003E9DBB /* KKTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKTabViewController.swift; sourceTree = "<group>"; };
+		525873FE1C7C3E65003E9DBB /* KKSineWaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKSineWaveViewController.swift; sourceTree = "<group>"; };
+		525874001C7C4042003E9DBB /* KKTriangleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKTriangleViewController.swift; sourceTree = "<group>"; };
 		92B07BC4549A6F0B9058B200 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB033B0FFDB5D5F8AEBDE9EC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,9 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				525873E31C76B511003E9DBB /* AppDelegate.swift */,
-				525873FC1C7B1EEC003E9DBB /* KKTabViewController.swift */,
 				525873F61C7B1B05003E9DBB /* KKPWMViewController.swift */,
 				525873F81C7B1B77003E9DBB /* KKSawtoothViewController.swift */,
+				525873FE1C7C3E65003E9DBB /* KKSineWaveViewController.swift */,
+				525874001C7C4042003E9DBB /* KKTriangleViewController.swift */,
 				525873F21C76CD5C003E9DBB /* KKWindow.swift */,
 				525873F41C76EA6D003E9DBB /* KKInstrument.swift */,
 				525873E71C76B511003E9DBB /* Assets.xcassets */,
@@ -223,8 +226,9 @@
 				525873F51C76EA6D003E9DBB /* KKInstrument.swift in Sources */,
 				525873F71C7B1B05003E9DBB /* KKPWMViewController.swift in Sources */,
 				525873E41C76B511003E9DBB /* AppDelegate.swift in Sources */,
-				525873FD1C7B1EEC003E9DBB /* KKTabViewController.swift in Sources */,
+				525873FF1C7C3E65003E9DBB /* KKSineWaveViewController.swift in Sources */,
 				525873F31C76CD5C003E9DBB /* KKWindow.swift in Sources */,
+				525874011C7C4042003E9DBB /* KKTriangleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

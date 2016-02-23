@@ -1,8 +1,8 @@
 //
-//  KKSawtoothViewController.swift
+//  KKTriangleViewController.swift
 //  KeyboardKeyboard
 //
-//  Created by 杨嘉浩 on 16/2/22.
+//  Created by 杨嘉浩 on 16/2/23.
 //  Copyright © 2016年 TYKH. All rights reserved.
 //
 
@@ -10,9 +10,9 @@ import Cocoa
 import AudioKit
 
 
-class KKSawtoothViewController: NSViewController {
+class KKTriangleViewController: NSViewController {
     
-    let instrument = AKSawtoothSynth(voiceCount: 8)
+    let instrument = AKWavetableSynth(waveform: AKTable(.Triangle),voiceCount: 8)
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -26,7 +26,7 @@ class KKSawtoothViewController: NSViewController {
     override func viewWillAppear() {
         KKInstrument.sharedInstance.instrument = instrument
     }
-
+    
     @IBOutlet weak var volumeLabel: NSTextField!
     @IBAction func volumeSliderSlid(sender: NSSlider) {
         instrument.volume = sender.doubleValue

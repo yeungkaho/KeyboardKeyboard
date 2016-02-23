@@ -21,7 +21,7 @@ class KKPWMViewController: NSViewController {
         instrument.decayDuration = 0.0
         instrument.attackDuration = 0.0
         instrument.releaseDuration = 0.1
-        instrument.volume = 0.4
+        instrument.volume = 0.5
         instrument.sustainLevel = 1
     }
     
