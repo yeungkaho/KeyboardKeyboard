@@ -114,6 +114,7 @@ class KKInstrument {
             activeNotesByKeyCode.removeAll()
             AudioKit.stop()
             AudioKit.start()
+            return
         }
         
         if keyMap[theEvent.keyCode] == nil {
