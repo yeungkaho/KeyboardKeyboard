@@ -10,12 +10,12 @@ import Foundation
 import Cocoa
 
 class KKWindow: NSWindow {
-    override var canBecomeMainWindow: Bool { return true }
-    override var canBecomeKeyWindow: Bool { return true }
-    override func keyDown(theEvent: NSEvent) {
+    override var canBecomeMain: Bool { return true }
+    override var canBecomeKey: Bool { return true }
+    override func keyDown(with theEvent: NSEvent) {
         KKInstrument.sharedInstance.keyDown(theEvent)
     }
-    override func keyUp(theEvent: NSEvent) {
+    override func keyUp(with theEvent: NSEvent) {
         KKInstrument.sharedInstance.keyUp(theEvent)
     }
 }

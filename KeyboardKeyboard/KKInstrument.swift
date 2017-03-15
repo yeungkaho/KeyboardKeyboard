@@ -8,10 +8,11 @@
 
 import Foundation
 import AudioKit
-
+import CoreAudioKit
 class KKInstrument {
     
     static let sharedInstance = KKInstrument()
+    
     
     let keyMap:Dictionary<UInt16,Int> = [
         6:0,
@@ -59,37 +60,54 @@ class KKInstrument {
     
     var octaveOffset = 5
     
-    var token: dispatch_once_t = 0
+    var token: Int = 0
     
-    var instrument:AKPolyphonicInstrument? {
+    var activeNotes = [Int]()
+    
+    var instrument:AKPolyphonicNode? {
         didSet{
-            AudioKit.stop()
             for (_,note) in activeNotesByKeyCode{
-                oldValue!.stopNote(note)
+                oldValue!.stop(noteNumber: note)
             }
             activeNotesByKeyCode.removeAll()
-            AudioKit.output = instrument
+        }
+    }
+    
+    
+    var mixer: AKMixer? {
+        didSet{
+            AudioKit.stop()
+            AudioKit.output = mixer
             AudioKit.start()
         }
     }
     
-    private init () {
+    fileprivate init () {
     }
     
-    func keyUp(theEvent: NSEvent) {
+    var activeNotesDescription:String {
+        get {
+            func toNoteName(_ noteInt:Int)->String {
+                return "\(noteInt)"
+            }
+            return (activeNotes.map(toNoteName).description)
+        }
+    }
+    
+    func keyUp(_ theEvent: NSEvent) {
         if keyMap[theEvent.keyCode] == nil {
             return
         }
         
         if let note = activeNotesByKeyCode[theEvent.keyCode] {
-            instrument!.stopNote(note)
+            instrument!.stop(noteNumber: note)
         }
         
-        activeNotesByKeyCode.removeValueForKey(theEvent.keyCode)
+        activeNotesByKeyCode.removeValue(forKey: theEvent.keyCode)
     }
     
-    func keyDown(theEvent: NSEvent) {
-        if theEvent.ARepeat || theEvent.modifierFlags.contains(.CommandKeyMask){
+    func keyDown(_ theEvent: NSEvent) {
+        if theEvent.isARepeat || theEvent.modifierFlags.contains(.command){
             //ignore repeats or command key shortcuts
             return
         }
@@ -109,7 +127,7 @@ class KKInstrument {
         } else if theEvent.keyCode == 53 {
             //esc:kills all sound
             for (_, note) in activeNotesByKeyCode{
-                instrument?.stopNote(note)
+                instrument?.stop(noteNumber: note)
             }
             activeNotesByKeyCode.removeAll()
             AudioKit.stop()
@@ -117,14 +135,14 @@ class KKInstrument {
             return
         }
         
-        if keyMap[theEvent.keyCode] == nil {
-            //not specified as an instrumental key
-            return
+        if let note = keyMap[theEvent.keyCode] {
+            let noteToPlay = note + octaveOffset * 12
+            print("playNoteByDivisor(\(noteToPlay),16);")
+            activeNotesByKeyCode[theEvent.keyCode] = noteToPlay
+            instrument!.play(noteNumber: noteToPlay,velocity:127)
         }
         
-        let noteToPlay = keyMap[theEvent.keyCode]! + octaveOffset * 12
-        activeNotesByKeyCode[theEvent.keyCode] = noteToPlay
-        instrument!.playNote(noteToPlay,velocity:127)
+        
         
     }
 }
