@@ -12,13 +12,11 @@ import AudioKit
 
 class KKPWMViewController: NSViewController {
     
-    
-    
-    var waveTable = AKTable(.square)
-    
     let instrument = AKPWMOscillatorBank()
     
     let mixer = AKMixer()
+    
+    var lpf: AKLowPassFilter?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -27,8 +25,11 @@ class KKPWMViewController: NSViewController {
         instrument.releaseDuration = 0.0
         instrument.sustainLevel = 1
         instrument.pulseWidth = 0.5
+        
+        lpf = AKLowPassFilter(instrument)
+        lpf?.cutoffFrequency = 22050
         mixer.volume = 0.5
-        mixer.connect(instrument)
+        mixer.connect(lpf!)
     }
     
     override func viewWillAppear() {
@@ -45,6 +46,19 @@ class KKPWMViewController: NSViewController {
         volumeLabel.stringValue = String(format:"volume\n%.0f%%",sender.doubleValue*100)
     }
     
+    @IBOutlet weak var lpfLabel: NSTextField!
+    @IBAction func lpfSliderSlid(_ sender: NSSlider) {
+        let freq = pow(M_E, sender.doubleValue)
+        lpf?.cutoffFrequency = freq
+        if sender.doubleValue == sender.maxValue {
+            lpfLabel.stringValue = String(format:"LPF\n-")
+        } else {
+            lpfLabel.stringValue = String(format:"LPF\n%.0f",freq)
+        }
+        
+    }
+    
+    
     @IBOutlet weak var pulseWidthLabel: NSTextField!
     @IBAction func pulseWidthSliderSlid(_ sender: NSSlider) {
         instrument.pulseWidth = sender.doubleValue
@@ -56,9 +70,6 @@ class KKPWMViewController: NSViewController {
         instrument.attackDuration = sender.doubleValue
         attackDurationLabel.stringValue = String(format:"attackDuration:%.6f",sender.doubleValue)
         
-    }
-    @IBAction func attackDurationLabelTouched(_ sender: NSTextField) {
-        print("attackDurationLabelTouched")
     }
     
     @IBOutlet weak var decayDurationLabel: NSTextField!

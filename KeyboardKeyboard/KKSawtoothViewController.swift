@@ -16,15 +16,21 @@ class KKSawtoothViewController: NSViewController {
     
     let mixer = AKMixer()
     
+    var lpf: AKLowPassFilter?
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         instrument.decayDuration = 0.0
         instrument.attackDuration = 0.0
         instrument.releaseDuration = 0.0
         instrument.sustainLevel = 1
+        
+        lpf = AKLowPassFilter(instrument)
+        lpf?.cutoffFrequency = 22050
         mixer.volume = 0.5
-        mixer.connect(instrument)
+        mixer.connect(lpf!)
     }
+    
     
     override func viewWillAppear() {
         KKInstrument.sharedInstance.instrument = instrument
@@ -36,6 +42,18 @@ class KKSawtoothViewController: NSViewController {
     @IBAction func volumeSliderSlid(_ sender: NSSlider) {
         mixer.volume = sender.doubleValue
         volumeLabel.stringValue = String(format:"volume\n%.0f%%",sender.doubleValue*100)
+    }
+    
+    @IBOutlet weak var lpfLabel: NSTextField!
+    @IBAction func lpfSliderSlid(_ sender: NSSlider) {
+        let freq = pow(M_E, sender.doubleValue)
+        lpf?.cutoffFrequency = freq
+        if sender.doubleValue == sender.maxValue {
+            lpfLabel.stringValue = String(format:"LPF\n-")
+        } else {
+            lpfLabel.stringValue = String(format:"LPF\n%.0f",freq)
+        }
+        
     }
     
     @IBOutlet weak var attackDurationLabel: NSTextField!

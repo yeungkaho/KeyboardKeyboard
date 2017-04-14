@@ -13,7 +13,6 @@ class KKInstrument {
     
     static let sharedInstance = KKInstrument()
     
-    
     let keyMap:Dictionary<UInt16,Int> = [
         6:0,
         1:1,
@@ -56,7 +55,7 @@ class KKInstrument {
         42:33
     ]
     
-    var activeNotesByKeyCode = Dictionary<UInt16,Int>()
+    var activeNotesByKeyCode = [UInt16:Int]()
     
     var octaveOffset = 5
     
@@ -67,7 +66,7 @@ class KKInstrument {
     var instrument:AKPolyphonicNode? {
         didSet{
             for (_,note) in activeNotesByKeyCode{
-                oldValue!.stop(noteNumber: MIDINoteNumber(note))
+                oldValue!.stop(noteNumber: note)
             }
             activeNotesByKeyCode.removeAll()
         }
@@ -100,7 +99,7 @@ class KKInstrument {
         }
         
         if let note = activeNotesByKeyCode[theEvent.keyCode] {
-            instrument!.stop(noteNumber: MIDINoteNumber(note))
+            instrument!.stop(noteNumber: note)
         }
         
         activeNotesByKeyCode.removeValue(forKey: theEvent.keyCode)
@@ -127,7 +126,7 @@ class KKInstrument {
         } else if theEvent.keyCode == 53 {
             //esc:kills all sound
             for (_, note) in activeNotesByKeyCode{
-                instrument?.stop(noteNumber: MIDINoteNumber(note))
+                instrument?.stop(noteNumber: note)
             }
             activeNotesByKeyCode.removeAll()
             AudioKit.stop()
@@ -138,7 +137,7 @@ class KKInstrument {
         if let note = keyMap[theEvent.keyCode] {
             let noteToPlay = note + octaveOffset * 12
             activeNotesByKeyCode[theEvent.keyCode] = noteToPlay
-            instrument!.play(noteNumber: MIDINoteNumber(noteToPlay),velocity:127)
+            instrument!.play(noteNumber: noteToPlay,velocity:127)
         }
         
         

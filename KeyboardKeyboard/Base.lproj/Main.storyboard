@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
@@ -113,7 +113,7 @@
             <objects>
                 <viewController title="PWM" id="XfG-lQ-9wD" customClass="KKPWMViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="337" height="277"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="277"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Uk-ym-OQf">
@@ -143,9 +143,6 @@
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
-                                <connections>
-                                    <action selector="attackDurationLabelTouched:" target="XfG-lQ-9wD" id="7Uh-WB-w7H"/>
-                                </connections>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gn6-2E-hIC" userLabel="Attack Duration Slider">
                                 <rect key="frame" x="74" y="214" width="245" height="19"/>
@@ -223,11 +220,29 @@
                                     <action selector="pulseWidthSliderSlid:" target="XfG-lQ-9wD" id="Nxl-5O-yz7"/>
                                 </connections>
                             </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eT0-4p-uDa">
+                                <rect key="frame" x="323" y="216" width="52" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="LPF -" id="Zbv-97-hhC">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wa-MK-mav" userLabel="Volume Slider">
+                                <rect key="frame" x="339" y="17" width="19" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" minValue="4" maxValue="10" doubleValue="10" tickMarkPosition="right" sliderType="linear" id="oea-zH-JdS"/>
+                                <connections>
+                                    <action selector="lpfSliderSlid:" target="XfG-lQ-9wD" id="MTf-kD-jW5"/>
+                                </connections>
+                            </slider>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="attackDurationLabel" destination="jSN-5q-tHW" id="6jE-YX-Jf2"/>
                         <outlet property="decayDurationLabel" destination="PIt-WV-DCh" id="mJL-bE-KAq"/>
+                        <outlet property="lpfLabel" destination="eT0-4p-uDa" id="Kqg-AO-CnM"/>
                         <outlet property="pulseWidthLabel" destination="t2g-aF-ISK" id="xKl-2m-wLI"/>
                         <outlet property="releaseDurationLabel" destination="xsj-7i-WQH" id="NBT-QW-Mp1"/>
                         <outlet property="sustainLevelLabel" destination="NCy-NX-yTF" id="cKc-C8-JcD"/>
@@ -236,18 +251,17 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-508.5" y="1778.5"/>
+            <point key="canvasLocation" x="-705" y="1779"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="yyL-9h-yPI">
             <objects>
-                <tabViewController selectedTabViewItemIndex="4" id="dQz-34-Nkl" sceneMemberID="viewController">
+                <tabViewController id="dQz-34-Nkl" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="KKp-zw-rgG"/>
                         <tabViewItem id="V8I-2O-G3U"/>
                         <tabViewItem id="9nQ-Jo-qds"/>
                         <tabViewItem id="vPy-dW-qWH"/>
-                        <tabViewItem id="OEV-qk-seb"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="wBc-Hv-d9Q">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -260,7 +274,6 @@
                         <segue destination="exy-sg-ahZ" kind="relationship" relationship="tabItems" id="bBD-kN-xkE"/>
                         <segue destination="qt2-Ff-0gA" kind="relationship" relationship="tabItems" id="KqB-jz-yBx"/>
                         <segue destination="ta7-h7-NG7" kind="relationship" relationship="tabItems" id="DpX-FX-pQd"/>
-                        <segue destination="p71-g5-bQC" kind="relationship" relationship="tabItems" id="Mas-Ln-qCp"/>
                     </connections>
                 </tabViewController>
                 <customObject id="19q-GL-ztM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -272,7 +285,7 @@
             <objects>
                 <viewController title="Sawtooth" id="exy-sg-ahZ" customClass="KKSawtoothViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="6gH-F8-29T">
-                        <rect key="frame" x="0.0" y="0.0" width="337" height="277"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="277"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oft-6S-r8m">
@@ -362,11 +375,29 @@
                                     <action selector="releaseDurationSliderSlid:" target="exy-sg-ahZ" id="fVr-0X-3NX"/>
                                 </connections>
                             </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbv-by-FkV">
+                                <rect key="frame" x="323" y="216" width="52" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="LPF -" id="BPf-ho-X6Q">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6G-dd-16x" userLabel="Volume Slider">
+                                <rect key="frame" x="339" y="17" width="19" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" minValue="4" maxValue="10" doubleValue="10" tickMarkPosition="right" sliderType="linear" id="4Gm-hl-xry"/>
+                                <connections>
+                                    <action selector="lpfSliderSlid:" target="exy-sg-ahZ" id="Rlk-s1-jAM"/>
+                                </connections>
+                            </slider>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="attackDurationLabel" destination="1Ds-vn-wam" id="I4Z-uW-pHT"/>
                         <outlet property="decayDurationLabel" destination="41l-c4-PYH" id="dFN-xD-Tbi"/>
+                        <outlet property="lpfLabel" destination="jbv-by-FkV" id="nuS-Q0-PH3"/>
                         <outlet property="releaseDurationLabel" destination="t3I-Uw-fBf" id="7tY-VE-bQt"/>
                         <outlet property="sustainLevelLabel" destination="S88-12-ETs" id="JwL-sW-7Ax"/>
                         <outlet property="volumeLabel" destination="Oft-6S-r8m" id="d4O-pH-ulv"/>
@@ -374,14 +405,14 @@
                 </viewController>
                 <customObject id="VKW-qR-V4L" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148.5" y="1778.5"/>
+            <point key="canvasLocation" x="-288.5" y="1778.5"/>
         </scene>
         <!--Sine-->
         <scene sceneID="fcA-xo-smk">
             <objects>
                 <viewController title="Sine" id="qt2-Ff-0gA" customClass="KKSineWaveViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="VZ2-Tq-eMs">
-                        <rect key="frame" x="0.0" y="0.0" width="337" height="277"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="277"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6Y-3z-a8d">
@@ -471,11 +502,29 @@
                                     <action selector="releaseDurationSliderSlid:" target="qt2-Ff-0gA" id="tAl-h4-eMO"/>
                                 </connections>
                             </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ldf-6z-ijJ">
+                                <rect key="frame" x="323" y="216" width="52" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="LPF -" id="MGs-uK-lVr">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="teh-fR-GMv" userLabel="Volume Slider">
+                                <rect key="frame" x="339" y="17" width="19" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" minValue="4" maxValue="10" doubleValue="10" tickMarkPosition="right" sliderType="linear" id="PAE-Cf-PWv"/>
+                                <connections>
+                                    <action selector="lpfSliderSlid:" target="qt2-Ff-0gA" id="ZAJ-2x-aYQ"/>
+                                </connections>
+                            </slider>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="attackDurationLabel" destination="eRN-qY-IWn" id="FNi-fp-6ww"/>
                         <outlet property="decayDurationLabel" destination="m9C-V5-tb7" id="l1m-pR-JuR"/>
+                        <outlet property="lpfLabel" destination="Ldf-6z-ijJ" id="0AB-ln-SvW"/>
                         <outlet property="releaseDurationLabel" destination="zkx-Jw-754" id="i2K-Bq-MYZ"/>
                         <outlet property="sustainLevelLabel" destination="6kq-9y-sH4" id="0dS-UV-NQi"/>
                         <outlet property="volumeLabel" destination="c6Y-3z-a8d" id="HkG-c5-msq"/>
@@ -483,27 +532,14 @@
                 </viewController>
                 <customObject id="cvf-tF-hK5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="211.5" y="1778.5"/>
-        </scene>
-        <!--genericVC-->
-        <scene sceneID="adv-ZM-bF9">
-            <objects>
-                <viewController title="genericVC" id="p71-g5-bQC" customClass="KKInstrumentViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="krs-Rh-PFR">
-                        <rect key="frame" x="0.0" y="0.0" width="337" height="277"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="X30-J5-bAS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="603" y="1319"/>
+            <point key="canvasLocation" x="141.5" y="1778.5"/>
         </scene>
         <!--Triangle-->
         <scene sceneID="gYk-FH-XZX">
             <objects>
                 <viewController title="Triangle" id="ta7-h7-NG7" customClass="KKTriangleViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="LVn-wc-3KS">
-                        <rect key="frame" x="0.0" y="0.0" width="337" height="277"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="277"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-Vd-UuW">
@@ -593,11 +629,29 @@
                                     <action selector="releaseDurationSliderSlid:" target="ta7-h7-NG7" id="8jv-iG-DEC"/>
                                 </connections>
                             </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fa7-tY-EYz">
+                                <rect key="frame" x="323" y="216" width="52" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="LPF -" id="HR4-az-URR">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-aD-BWL" userLabel="Volume Slider">
+                                <rect key="frame" x="339" y="17" width="19" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" minValue="4" maxValue="10" doubleValue="10" tickMarkPosition="right" sliderType="linear" id="trv-Xz-QDc"/>
+                                <connections>
+                                    <action selector="lpfSliderSlid:" target="ta7-h7-NG7" id="y1g-q8-MNo"/>
+                                </connections>
+                            </slider>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="attackDurationLabel" destination="Isk-TS-bOh" id="JZX-42-QKv"/>
                         <outlet property="decayDurationLabel" destination="ZpK-2X-wrV" id="CRW-h7-Vvz"/>
+                        <outlet property="lpfLabel" destination="fa7-tY-EYz" id="vN3-JS-Rmd"/>
                         <outlet property="releaseDurationLabel" destination="AAZ-WA-ghy" id="Kvo-FL-A1h"/>
                         <outlet property="sustainLevelLabel" destination="Eoh-R9-7KQ" id="XIS-yV-leq"/>
                         <outlet property="volumeLabel" destination="xnZ-Vd-UuW" id="igE-hG-gL0"/>
@@ -605,7 +659,7 @@
                 </viewController>
                 <customObject id="mNj-nS-kLd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569.5" y="1778.5"/>
+            <point key="canvasLocation" x="620" y="1779"/>
         </scene>
     </scenes>
 </document>
