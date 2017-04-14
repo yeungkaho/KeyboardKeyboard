@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4507DD661E7D9CB4001C50E0 /* KKInstrumentPropertySettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507DD641E7D9CB4001C50E0 /* KKInstrumentPropertySettingView.swift */; };
+		4507DD671E7D9CB4001C50E0 /* KKInstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507DD651E7D9CB4001C50E0 /* KKInstrumentViewController.swift */; };
 		525873E41C76B511003E9DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873E31C76B511003E9DBB /* AppDelegate.swift */; };
 		525873E81C76B511003E9DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525873E71C76B511003E9DBB /* Assets.xcassets */; };
 		525873EB1C76B511003E9DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525873E91C76B511003E9DBB /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		05A38F40AA7BF3E80390D36B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		37D59322E1720C7290938901 /* Pods-KeyboardKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		4507DD641E7D9CB4001C50E0 /* KKInstrumentPropertySettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKInstrumentPropertySettingView.swift; sourceTree = "<group>"; };
+		4507DD651E7D9CB4001C50E0 /* KKInstrumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKInstrumentViewController.swift; sourceTree = "<group>"; };
 		525873E01C76B511003E9DBB /* KeyboardKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525873E31C76B511003E9DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525873E71C76B511003E9DBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				525874001C7C4042003E9DBB /* KKTriangleViewController.swift */,
 				525873F21C76CD5C003E9DBB /* KKWindow.swift */,
 				525873F41C76EA6D003E9DBB /* KKInstrument.swift */,
+				4507DD641E7D9CB4001C50E0 /* KKInstrumentPropertySettingView.swift */,
+				4507DD651E7D9CB4001C50E0 /* KKInstrumentViewController.swift */,
 				525873E71C76B511003E9DBB /* Assets.xcassets */,
 				525873E91C76B511003E9DBB /* Main.storyboard */,
 				525873EC1C76B511003E9DBB /* Info.plist */,
@@ -234,6 +240,8 @@
 				525873F71C7B1B05003E9DBB /* KKPWMViewController.swift in Sources */,
 				525873E41C76B511003E9DBB /* AppDelegate.swift in Sources */,
 				525873FF1C7C3E65003E9DBB /* KKSineWaveViewController.swift in Sources */,
+				4507DD661E7D9CB4001C50E0 /* KKInstrumentPropertySettingView.swift in Sources */,
+				4507DD671E7D9CB4001C50E0 /* KKInstrumentViewController.swift in Sources */,
 				525873F31C76CD5C003E9DBB /* KKWindow.swift in Sources */,
 				525874011C7C4042003E9DBB /* KKTriangleViewController.swift in Sources */,
 			);

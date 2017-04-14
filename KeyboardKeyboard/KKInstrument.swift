@@ -67,7 +67,7 @@ class KKInstrument {
     var instrument:AKPolyphonicNode? {
         didSet{
             for (_,note) in activeNotesByKeyCode{
-                oldValue!.stop(noteNumber: note)
+                oldValue!.stop(noteNumber: MIDINoteNumber(note))
             }
             activeNotesByKeyCode.removeAll()
         }
@@ -100,7 +100,7 @@ class KKInstrument {
         }
         
         if let note = activeNotesByKeyCode[theEvent.keyCode] {
-            instrument!.stop(noteNumber: note)
+            instrument!.stop(noteNumber: MIDINoteNumber(note))
         }
         
         activeNotesByKeyCode.removeValue(forKey: theEvent.keyCode)
@@ -127,7 +127,7 @@ class KKInstrument {
         } else if theEvent.keyCode == 53 {
             //esc:kills all sound
             for (_, note) in activeNotesByKeyCode{
-                instrument?.stop(noteNumber: note)
+                instrument?.stop(noteNumber: MIDINoteNumber(note))
             }
             activeNotesByKeyCode.removeAll()
             AudioKit.stop()
@@ -137,9 +137,8 @@ class KKInstrument {
         
         if let note = keyMap[theEvent.keyCode] {
             let noteToPlay = note + octaveOffset * 12
-            print("playNoteByDivisor(\(noteToPlay),16);")
             activeNotesByKeyCode[theEvent.keyCode] = noteToPlay
-            instrument!.play(noteNumber: noteToPlay,velocity:127)
+            instrument!.play(noteNumber: MIDINoteNumber(noteToPlay),velocity:127)
         }
         
         

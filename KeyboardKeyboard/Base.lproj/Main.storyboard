@@ -143,6 +143,9 @@
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="attackDurationLabelTouched:" target="XfG-lQ-9wD" id="7Uh-WB-w7H"/>
+                                </connections>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gn6-2E-hIC" userLabel="Attack Duration Slider">
                                 <rect key="frame" x="74" y="214" width="245" height="19"/>
@@ -238,12 +241,13 @@
         <!--Tab View Controller-->
         <scene sceneID="yyL-9h-yPI">
             <objects>
-                <tabViewController id="dQz-34-Nkl" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="4" id="dQz-34-Nkl" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="KKp-zw-rgG"/>
                         <tabViewItem id="V8I-2O-G3U"/>
                         <tabViewItem id="9nQ-Jo-qds"/>
                         <tabViewItem id="vPy-dW-qWH"/>
+                        <tabViewItem id="OEV-qk-seb"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="wBc-Hv-d9Q">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -256,6 +260,7 @@
                         <segue destination="exy-sg-ahZ" kind="relationship" relationship="tabItems" id="bBD-kN-xkE"/>
                         <segue destination="qt2-Ff-0gA" kind="relationship" relationship="tabItems" id="KqB-jz-yBx"/>
                         <segue destination="ta7-h7-NG7" kind="relationship" relationship="tabItems" id="DpX-FX-pQd"/>
+                        <segue destination="p71-g5-bQC" kind="relationship" relationship="tabItems" id="Mas-Ln-qCp"/>
                     </connections>
                 </tabViewController>
                 <customObject id="19q-GL-ztM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -479,6 +484,19 @@
                 <customObject id="cvf-tF-hK5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="211.5" y="1778.5"/>
+        </scene>
+        <!--genericVC-->
+        <scene sceneID="adv-ZM-bF9">
+            <objects>
+                <viewController title="genericVC" id="p71-g5-bQC" customClass="KKInstrumentViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="krs-Rh-PFR">
+                        <rect key="frame" x="0.0" y="0.0" width="337" height="277"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="X30-J5-bAS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="1319"/>
         </scene>
         <!--Triangle-->
         <scene sceneID="gYk-FH-XZX">

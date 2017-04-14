@@ -57,6 +57,9 @@ class KKPWMViewController: NSViewController {
         attackDurationLabel.stringValue = String(format:"attackDuration:%.6f",sender.doubleValue)
         
     }
+    @IBAction func attackDurationLabelTouched(_ sender: NSTextField) {
+        print("attackDurationLabelTouched")
+    }
     
     @IBOutlet weak var decayDurationLabel: NSTextField!
     @IBAction func decayDurationSliderSlid(_ sender: NSSlider) {
