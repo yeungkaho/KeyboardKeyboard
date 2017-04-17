@@ -21,13 +21,13 @@ class KKTriangleViewController: NSViewController {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         instrument.decayDuration = 0.0
-        instrument.attackDuration = 0.0
-        instrument.releaseDuration = 0.0
+        instrument.attackDuration = 0.005
+        instrument.releaseDuration = 0.005
         instrument.sustainLevel = 1
         
         lpf = AKLowPassFilter(instrument)
         lpf?.cutoffFrequency = 22050
-        mixer.volume = 0.5
+        mixer.volume = 1.0
         mixer.connect(lpf!)
     }
     

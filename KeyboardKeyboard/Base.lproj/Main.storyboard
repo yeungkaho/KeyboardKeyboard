@@ -310,7 +310,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ds-vn-wam">
                                 <rect key="frame" x="74" y="240" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0" id="5Zh-eF-68D">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0.005" id="5Zh-eF-68D">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -319,7 +319,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEh-gE-318" userLabel="Attack Duration Slider">
                                 <rect key="frame" x="74" y="214" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" tickMarkPosition="above" sliderType="linear" id="8fe-oW-S5l"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="8fe-oW-S5l"/>
                                 <connections>
                                     <action selector="attackDurationSliderSlid:" target="exy-sg-ahZ" id="16d-1B-TUT"/>
                                 </connections>
@@ -361,7 +361,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-Uw-fBf">
                                 <rect key="frame" x="74" y="93" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0" id="E7u-XK-rnx">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0.005" id="E7u-XK-rnx">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -370,7 +370,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjx-Ym-t3O">
                                 <rect key="frame" x="74" y="67" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" tickMarkPosition="above" sliderType="linear" id="TLn-uG-yWa"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="TLn-uG-yWa"/>
                                 <connections>
                                     <action selector="releaseDurationSliderSlid:" target="exy-sg-ahZ" id="fVr-0X-3NX"/>
                                 </connections>
@@ -421,7 +421,7 @@
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" id="2FK-vg-9Cg">
                                     <font key="font" metaFont="system"/>
                                     <string key="title">volume
-50%</string>
+100%</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -429,7 +429,7 @@
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYX-HI-pmu" userLabel="Volume Slider">
                                 <rect key="frame" x="34" y="17" width="19" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="right" sliderType="linear" id="Znn-Iu-xEa"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="Znn-Iu-xEa"/>
                                 <connections>
                                     <action selector="volumeSliderSlid:" target="qt2-Ff-0gA" id="GAD-XG-iPa"/>
                                 </connections>
@@ -437,7 +437,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-qY-IWn">
                                 <rect key="frame" x="74" y="240" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0" id="tEl-4N-CWn">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0.005" id="tEl-4N-CWn">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -446,7 +446,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fjx-7E-jum" userLabel="Attack Duration Slider">
                                 <rect key="frame" x="74" y="214" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" tickMarkPosition="above" sliderType="linear" id="UJ3-iF-mts"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="UJ3-iF-mts"/>
                                 <connections>
                                     <action selector="attackDurationSliderSlid:" target="qt2-Ff-0gA" id="lHv-P9-ojT"/>
                                 </connections>
@@ -488,7 +488,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-Jw-754">
                                 <rect key="frame" x="74" y="93" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0" id="LAu-2h-Bmh">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0.005" id="LAu-2h-Bmh">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -497,7 +497,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgX-PF-Dwc">
                                 <rect key="frame" x="74" y="67" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" tickMarkPosition="above" sliderType="linear" id="WUF-vt-p9l"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="WUF-vt-p9l"/>
                                 <connections>
                                     <action selector="releaseDurationSliderSlid:" target="qt2-Ff-0gA" id="tAl-h4-eMO"/>
                                 </connections>
@@ -548,7 +548,7 @@
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" id="iVn-cs-8p8">
                                     <font key="font" metaFont="system"/>
                                     <string key="title">volume
-50%</string>
+100%</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -556,7 +556,7 @@
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXf-JT-IMn" userLabel="Volume Slider">
                                 <rect key="frame" x="34" y="17" width="19" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="right" sliderType="linear" id="h28-F2-P1x"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="h28-F2-P1x"/>
                                 <connections>
                                     <action selector="volumeSliderSlid:" target="ta7-h7-NG7" id="Rxs-wQ-eiR"/>
                                 </connections>
@@ -564,7 +564,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Isk-TS-bOh">
                                 <rect key="frame" x="74" y="240" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0" id="m7m-00-59o">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0.005" id="m7m-00-59o">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -573,7 +573,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-aC-vAw" userLabel="Attack Duration Slider">
                                 <rect key="frame" x="74" y="214" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" tickMarkPosition="above" sliderType="linear" id="qzh-v4-k7r"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="qzh-v4-k7r"/>
                                 <connections>
                                     <action selector="attackDurationSliderSlid:" target="ta7-h7-NG7" id="hDd-Kp-Nhc"/>
                                 </connections>
@@ -615,7 +615,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAZ-WA-ghy">
                                 <rect key="frame" x="74" y="93" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0" id="6zO-my-ViH">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0.005" id="6zO-my-ViH">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -624,7 +624,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BS-Ug-nKS">
                                 <rect key="frame" x="74" y="67" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" tickMarkPosition="above" sliderType="linear" id="YEQ-pH-m6v"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="YEQ-pH-m6v"/>
                                 <connections>
                                     <action selector="releaseDurationSliderSlid:" target="ta7-h7-NG7" id="8jv-iG-DEC"/>
                                 </connections>
