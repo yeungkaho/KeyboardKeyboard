@@ -61,7 +61,7 @@ class KKInstrument {
     
     var token: Int = 0
     
-    var activeNotes = [Int]()
+    var isMonophonic = false
     
     var instrument:AKPolyphonicNode? {
         didSet{
@@ -69,9 +69,9 @@ class KKInstrument {
                 oldValue!.stop(noteNumber: MIDINoteNumber(note))
             }
             activeNotesByKeyCode.removeAll()
+            keyList.removeAll()
         }
     }
-    
     
     var mixer: AKMixer? {
         didSet{
@@ -84,15 +84,6 @@ class KKInstrument {
     fileprivate init () {
     }
     
-    var activeNotesDescription:String {
-        get {
-            func toNoteName(_ noteInt:Int)->String {
-                return "\(noteInt)"
-            }
-            return (activeNotes.map(toNoteName).description)
-        }
-    }
-    
     func keyUp(_ theEvent: NSEvent) {
         if keyMap[theEvent.keyCode] == nil {
             return
@@ -103,6 +94,20 @@ class KKInstrument {
         }
         
         activeNotesByKeyCode.removeValue(forKey: theEvent.keyCode)
+        
+        if isMonophonic {
+            
+            if theEvent.keyCode == lastKey() {
+                popKeyCode()
+                let lastKeyCode = lastKey()
+                let lastNote = activeNotesByKeyCode[lastKeyCode]
+                if (lastNote != nil) {
+                    instrument!.play(noteNumber: MIDINoteNumber(lastNote!), velocity: 127)
+                }
+            } else {
+                dropKey(theEvent.keyCode)
+            }
+        }
     }
     
     func keyDown(_ theEvent: NSEvent) {
@@ -110,6 +115,7 @@ class KKInstrument {
             //ignore repeats or command key shortcuts
             return
         }
+        
         
         if theEvent.keyCode == 48 {
             //tab
@@ -125,22 +131,62 @@ class KKInstrument {
             return
         } else if theEvent.keyCode == 53 {
             //esc:kills all sound
-            for (_, note) in activeNotesByKeyCode{
-                instrument?.stop(noteNumber: MIDINoteNumber(note))
-            }
-            activeNotesByKeyCode.removeAll()
-            AudioKit.stop()
-            AudioKit.start()
+            killAll()
+            return
+        } else if theEvent.keyCode == 50{
+            //`:mono/poly switch
+            killAll()
+            isMonophonic = !isMonophonic
             return
         }
         
         if let note = keyMap[theEvent.keyCode] {
             let noteToPlay = note + octaveOffset * 12
             activeNotesByKeyCode[theEvent.keyCode] = noteToPlay
+            if isMonophonic {
+                if (activeNotesByKeyCode[lastKey()] != nil){
+                    instrument!.stop(noteNumber: MIDINoteNumber(activeNotesByKeyCode[lastKey()]!))
+                }
+                pushKeyCode(theEvent.keyCode)
+            }
             instrument!.play(noteNumber: MIDINoteNumber(noteToPlay),velocity:127)
         }
-        
-        
-        
+    }
+    
+    func killAll() {
+        for (_, note) in activeNotesByKeyCode{
+            instrument?.stop(noteNumber: MIDINoteNumber(note))
+        }
+        activeNotesByKeyCode.removeAll()
+        AudioKit.stop()
+        AudioKit.start()
+        keyList.removeAll()
+    }
+    
+    //monophonic
+    var keyList = [UInt16]()
+    
+    func pushKeyCode(_ keyCode: UInt16){
+        keyList.append(keyCode)
+    }
+
+    func popKeyCode() {
+        if keyList.count > 0{
+            keyList.removeLast()
+        }
+    }
+    
+    func lastKey() -> UInt16 {
+        return keyList.count > 0 ? keyList.last! : 0
+    }
+    
+    func dropKey(_ keyCode:UInt16){
+        for i in 0..<keyList.count - 1{
+            if keyList[i] == keyCode {
+               keyList.remove(at: i)
+            }
+        }
     }
 }
+
+

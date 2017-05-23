@@ -34,7 +34,6 @@ class KKSineWaveViewController: NSViewController {
     override func viewWillAppear() {
         KKInstrument.sharedInstance.instrument = instrument
         KKInstrument.sharedInstance.mixer = mixer
-        
     }
     
     @IBOutlet weak var volumeLabel: NSTextField!
@@ -52,7 +51,6 @@ class KKSineWaveViewController: NSViewController {
         } else {
             lpfLabel.stringValue = String(format:"LPF\n%.0f",freq)
         }
-        
     }
     
     @IBOutlet weak var attackDurationLabel: NSTextField!

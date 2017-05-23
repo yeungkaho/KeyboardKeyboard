@@ -9,7 +9,6 @@
 import Cocoa
 import AudioKit
 
-
 class KKPWMViewController: NSViewController {
     
     let instrument = AKPWMOscillatorBank()
@@ -57,7 +56,6 @@ class KKPWMViewController: NSViewController {
         }
         
     }
-    
     
     @IBOutlet weak var pulseWidthLabel: NSTextField!
     @IBAction func pulseWidthSliderSlid(_ sender: NSSlider) {

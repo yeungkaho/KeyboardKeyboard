@@ -31,7 +31,6 @@ class KKSawtoothViewController: NSViewController {
         mixer.connect(lpf!)
     }
     
-    
     override func viewWillAppear() {
         KKInstrument.sharedInstance.instrument = instrument
         KKInstrument.sharedInstance.mixer = mixer
