@@ -13,6 +13,8 @@ class KKInstrument {
     
     static let sharedInstance = KKInstrument()
     
+    weak var window:NSWindow?
+    
     let keyMap:Dictionary<UInt16,Int> = [
         6:0,
         1:1,
@@ -137,6 +139,7 @@ class KKInstrument {
             //`:mono/poly switch
             killAll()
             isMonophonic = !isMonophonic
+            window!.title = "KeyboardKeyboard" + (isMonophonic ? "(mono)":"")
             return
         }
         
@@ -181,6 +184,9 @@ class KKInstrument {
     }
     
     func dropKey(_ keyCode:UInt16){
+        if keyList.isEmpty {
+            return
+        }
         for i in 0..<keyList.count - 1{
             if keyList[i] == keyCode {
                keyList.remove(at: i)
