@@ -11,6 +11,7 @@
 		454C5C2A1E9FAF8C0024878B /* KKSawtoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C5C271E9FAF8C0024878B /* KKSawtoothViewController.swift */; };
 		454C5C2B1E9FAF8C0024878B /* KKSineWaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C5C281E9FAF8C0024878B /* KKSineWaveViewController.swift */; };
 		454C5C2C1E9FAF8C0024878B /* KKTriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C5C291E9FAF8C0024878B /* KKTriangleViewController.swift */; };
+		4566D77D1ED96D730055DC8F /* KKRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566D77C1ED96D730055DC8F /* KKRecorder.swift */; };
 		525873E41C76B511003E9DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873E31C76B511003E9DBB /* AppDelegate.swift */; };
 		525873E81C76B511003E9DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525873E71C76B511003E9DBB /* Assets.xcassets */; };
 		525873EB1C76B511003E9DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525873E91C76B511003E9DBB /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		454C5C271E9FAF8C0024878B /* KKSawtoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKSawtoothViewController.swift; sourceTree = "<group>"; };
 		454C5C281E9FAF8C0024878B /* KKSineWaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKSineWaveViewController.swift; sourceTree = "<group>"; };
 		454C5C291E9FAF8C0024878B /* KKTriangleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKTriangleViewController.swift; sourceTree = "<group>"; };
+		4566D77C1ED96D730055DC8F /* KKRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKRecorder.swift; sourceTree = "<group>"; };
 		4833408AE8D1580FE86CA901 /* Pods-KeyboardKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		525873E01C76B511003E9DBB /* KeyboardKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525873E31C76B511003E9DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				454C5C291E9FAF8C0024878B /* KKTriangleViewController.swift */,
 				525873F21C76CD5C003E9DBB /* KKWindow.swift */,
 				525873F41C76EA6D003E9DBB /* KKInstrument.swift */,
+				4566D77C1ED96D730055DC8F /* KKRecorder.swift */,
 				525873E71C76B511003E9DBB /* Assets.xcassets */,
 				525873E91C76B511003E9DBB /* Main.storyboard */,
 				525873EC1C76B511003E9DBB /* Info.plist */,
@@ -244,6 +247,7 @@
 				454C5C2B1E9FAF8C0024878B /* KKSineWaveViewController.swift in Sources */,
 				454C5C261E9FAF700024878B /* KKPWMViewController.swift in Sources */,
 				454C5C2C1E9FAF8C0024878B /* KKTriangleViewController.swift in Sources */,
+				4566D77D1ED96D730055DC8F /* KKRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

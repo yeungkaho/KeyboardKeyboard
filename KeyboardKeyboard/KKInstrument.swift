@@ -75,15 +75,13 @@ class KKInstrument {
         }
     }
     
-    var mixer: AKMixer? {
-        didSet{
-            AudioKit.stop()
-            AudioKit.output = mixer
-            AudioKit.start()
-        }
-    }
     
+    var mixer = AKMixer()
+    var outMixer = AKMixer()
     fileprivate init () {
+        outMixer.connect(mixer)
+        AudioKit.output = outMixer
+        AudioKit.start()
     }
     
     func keyUp(_ theEvent: NSEvent) {
@@ -121,7 +119,7 @@ class KKInstrument {
         
         if theEvent.keyCode == 48 {
             //tab
-            if (octaveOffset < 12){
+            if (octaveOffset < 10){
                 octaveOffset += 1
             }
             return
@@ -135,16 +133,32 @@ class KKInstrument {
             //esc:kills all sound
             killAll()
             return
-        } else if theEvent.keyCode == 50{
+        } else if theEvent.keyCode == 50 {
             //`:mono/poly switch
             killAll()
             isMonophonic = !isMonophonic
             window!.title = "KeyboardKeyboard" + (isMonophonic ? "(mono)":"")
             return
+        } else if theEvent.keyCode == 98 {
+            //F7: play recording
+            KKRecorder.sharedInstance.playRecording()
+            return
+        } else if theEvent.keyCode == 100 {
+            //F8: start recording
+            KKRecorder.sharedInstance.startRecording()
+            return
+        } else if theEvent.keyCode == 101 {
+            //F9: stop recording
+            KKRecorder.sharedInstance.stopRecording()
+            return
+        } else if theEvent.keyCode == 109 {
+            //F10: save recording
+            KKRecorder.sharedInstance.saveRecording()
+            return
         }
         
         if let note = keyMap[theEvent.keyCode] {
-            let noteToPlay = note + octaveOffset * 12
+            let noteToPlay = min(note + octaveOffset * 12,127)
             activeNotesByKeyCode[theEvent.keyCode] = noteToPlay
             if isMonophonic {
                 if (activeNotesByKeyCode[lastKey()] != nil){
@@ -161,8 +175,6 @@ class KKInstrument {
             instrument?.stop(noteNumber: MIDINoteNumber(note))
         }
         activeNotesByKeyCode.removeAll()
-        AudioKit.stop()
-        AudioKit.start()
         keyList.removeAll()
     }
     

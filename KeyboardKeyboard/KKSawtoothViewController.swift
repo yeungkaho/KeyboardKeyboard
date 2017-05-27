@@ -29,12 +29,11 @@ class KKSawtoothViewController: NSViewController {
         lpf?.cutoffFrequency = 22050
         mixer.volume = 0.5
         mixer.connect(lpf!)
+        KKInstrument.sharedInstance.mixer.connect(mixer)
     }
     
     override func viewWillAppear() {
         KKInstrument.sharedInstance.instrument = instrument
-        KKInstrument.sharedInstance.mixer = mixer
-        
     }
 
     @IBOutlet weak var volumeLabel: NSTextField!

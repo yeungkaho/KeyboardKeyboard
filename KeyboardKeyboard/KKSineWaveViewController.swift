@@ -29,11 +29,11 @@ class KKSineWaveViewController: NSViewController {
         lpf?.cutoffFrequency = 22050
         mixer.volume = 1.0
         mixer.connect(lpf!)
+        KKInstrument.sharedInstance.mixer.connect(mixer)
     }
     
     override func viewWillAppear() {
         KKInstrument.sharedInstance.instrument = instrument
-        KKInstrument.sharedInstance.mixer = mixer
     }
     
     @IBOutlet weak var volumeLabel: NSTextField!
