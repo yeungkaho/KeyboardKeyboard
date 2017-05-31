@@ -201,7 +201,8 @@ class KKInstrument {
         }
         for i in 0..<keyList.count - 1{
             if keyList[i] == keyCode {
-               keyList.remove(at: i)
+                keyList.remove(at: i)
+                break
             }
         }
     }

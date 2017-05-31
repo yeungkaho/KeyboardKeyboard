@@ -59,6 +59,9 @@ class KKRecorder {
     }
     
     func playRecording() {
+        if player == nil {
+            return
+        }
         do {try player!.reloadFile()} catch{}
         player!.play()
     }
