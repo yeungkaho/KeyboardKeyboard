@@ -33,7 +33,7 @@ class KKPWMViewController: NSViewController {
     }
     
     override func viewWillAppear() {
-        KKInstrument.sharedInstance.instrument = instrument        
+        KKInstrument.sharedInstance.instrument = instrument
     }
     
     override var acceptsFirstResponder: Bool { return true }

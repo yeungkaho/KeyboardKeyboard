@@ -27,18 +27,18 @@ class KKRecorder {
     
     func startRecording() {
         do{
-        let dateElements = NSDate.init().description.components(separatedBy: " ")
-        var fileName = "KKRecord_" + dateElements[0]+"_"+dateElements[1]
-        fileName = fileName.replacingOccurrences(of: ":", with: "-") + ".wav"
-        
-        let file = try AKAudioFile()//forWriting: NSURL.fileURL(withPath: NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/" + fileName) , settings: [AVLinearPCMBitDepthKey:16]
+            let dateElements = NSDate.init().description.components(separatedBy: " ")
+            var fileName = "KKRecord_" + dateElements[0]+"_"+dateElements[1]
+            fileName = fileName.replacingOccurrences(of: ":", with: "-") + ".wav"
             
-        let recorder = try AKNodeRecorder(node: KKInstrument.sharedInstance.mixer, file: file)
-        KKRecorder.sharedInstance.recorder = recorder
-        KKRecorder.sharedInstance.file = file
-        KKRecorder.sharedInstance.player = try AKAudioPlayer(file: file)
-        KKInstrument.sharedInstance.mixer.connect(KKRecorder.sharedInstance.player)
-            
+            let file = try AKAudioFile()//forWriting: NSURL.fileURL(withPath: NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/" + fileName) , settings: [AVLinearPCMBitDepthKey:16]
+                
+            let recorder = try AKNodeRecorder(node: KKInstrument.sharedInstance.mixer, file: file)
+            KKRecorder.sharedInstance.recorder = recorder
+            KKRecorder.sharedInstance.file = file
+            KKRecorder.sharedInstance.player = try AKAudioPlayer(file: file)
+            KKInstrument.sharedInstance.mixer.connect(KKRecorder.sharedInstance.player)
+                
         } catch {
             AKLog("Couldn't initialize recorder")
         }
