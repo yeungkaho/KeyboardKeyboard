@@ -8,11 +8,12 @@
 
 import Cocoa
 import AudioKit
+import AudioKitUI
 
 
 class KKTriangleViewController: NSViewController {
     let waveform = AKTable(.triangle)
-    let instrument = AKOscillatorBank(waveform: AKTable(.triangle))
+    let instrument = AKOscillatorBank(waveform: AKTable(.positiveTriangle))
     
     let mixer = AKMixer()
     
@@ -25,15 +26,44 @@ class KKTriangleViewController: NSViewController {
         instrument.releaseDuration = 0.005
         instrument.sustainLevel = 1
         
+        instrument.vibratoDepth = 0
+        instrument.vibratoRate = 0
         lpf = AKLowPassFilter(instrument)
         lpf?.cutoffFrequency = 22050
         mixer.volume = 1.0
         mixer.connect(lpf!)
         KKInstrument.sharedInstance.mixer.connect(mixer)
+
+    }
+    
+    override func viewDidLoad() {
+        let graph = AKOutputWaveformPlot.createView()
+        graph.frame.origin = CGPoint.zero
+        view.addSubview(graph)
+        
+        let v = AKADSRView(frame:CGRect(x: 0, y: 0, width: view.frame.width, height: 150)) { (a, d, s, r) in
+            print("a:\(a), d:\(d), s:\(s), r:\(r)")
+            self.instrument.setValue(a,forKey: "attackDuration")// as! Double =
+            self.instrument.decayDuration = d
+            self.instrument.sustainLevel = s
+            self.instrument.releaseDuration = r
+        }
+        v.attackDuration = 0.005
+        v.releaseDuration = 0.005
+        v.sustainLevel = 1
+        v.decayDuration = 0.0
+        
+        view.addSubview(v)
+        
+//        AKSlider(property: "Attack", value: 0, range: 0.0...1.0, taper: <#T##Double#>, format: <#T##String#>, color: <#T##AKColor#>, frame: <#T##CGRect#>, callback: <#T##(Double) -> Void#>)
     }
     
     override func viewWillAppear() {
         KKInstrument.sharedInstance.instrument = instrument
+        
+    }
+    override func viewDidAppear() {
+        
     }
     
     @IBOutlet weak var volumeLabel: NSTextField!

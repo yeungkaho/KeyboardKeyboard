@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,9 +96,12 @@
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="KeyboardKeyboard" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="KKWindow" customModule="KeyboardKeyboard" customModuleProvider="target">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" unifiedTitleAndToolbar="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <rect key="contentRect" x="454" y="274" width="480" height="339"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="1fn-l4-b4j"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="dQz-34-Nkl" kind="relationship" relationship="window.shadowedContentViewController" id="wUk-yB-Ygg"/>
@@ -113,11 +116,11 @@
             <objects>
                 <viewController title="PWM" id="XfG-lQ-9wD" customClass="KKPWMViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="277"/>
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="499"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Uk-ym-OQf">
-                                <rect key="frame" x="18" y="216" width="52" height="41"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Uk-ym-OQf">
+                                <rect key="frame" x="18" y="438" width="52" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" id="3Ss-Bl-5vl">
                                     <font key="font" metaFont="system"/>
@@ -128,15 +131,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVC-bQ-Aga" userLabel="Volume Slider">
-                                <rect key="frame" x="34" y="17" width="19" height="193"/>
+                                <rect key="frame" x="34" y="141" width="19" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="right" sliderType="linear" id="zQh-im-6S0"/>
                                 <connections>
                                     <action selector="volumeSliderSlid:" target="XfG-lQ-9wD" id="BqZ-sK-ltY"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSN-5q-tHW">
-                                <rect key="frame" x="74" y="240" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSN-5q-tHW">
+                                <rect key="frame" x="74" y="462" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0" id="WQT-R1-dwF">
                                     <font key="font" metaFont="system"/>
@@ -145,15 +148,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gn6-2E-hIC" userLabel="Attack Duration Slider">
-                                <rect key="frame" x="74" y="214" width="245" height="19"/>
+                                <rect key="frame" x="74" y="436" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" tickMarkPosition="above" sliderType="linear" id="Qdl-59-KjX"/>
                                 <connections>
                                     <action selector="attackDurationSliderSlid:" target="XfG-lQ-9wD" id="Mso-Qo-DvG"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-WV-DCh">
-                                <rect key="frame" x="74" y="191" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-WV-DCh">
+                                <rect key="frame" x="74" y="413" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="decayDuration:0" id="0h8-Lg-qP2">
                                     <font key="font" metaFont="system"/>
@@ -162,15 +165,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9A-Z3-XGV" userLabel="Decay Duration Slider">
-                                <rect key="frame" x="74" y="165" width="245" height="19"/>
+                                <rect key="frame" x="74" y="387" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="IFR-aZ-vK6"/>
                                 <connections>
                                     <action selector="decayDurationSliderSlid:" target="XfG-lQ-9wD" id="kmD-rX-tbK"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCy-NX-yTF" userLabel="Sustain Level Label">
-                                <rect key="frame" x="74" y="142" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCy-NX-yTF" userLabel="Sustain Level Label">
+                                <rect key="frame" x="74" y="364" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="sustainLevel:1" id="6qd-yc-Pwt">
                                     <font key="font" metaFont="system"/>
@@ -179,15 +182,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jV6-Mi-LdP" userLabel="Sustain Level Slider">
-                                <rect key="frame" x="74" y="116" width="245" height="19"/>
+                                <rect key="frame" x="74" y="338" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="PZA-RT-NfG"/>
                                 <connections>
                                     <action selector="sustainLevelSliderSlid:" target="XfG-lQ-9wD" id="wFu-we-8LD"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsj-7i-WQH">
-                                <rect key="frame" x="74" y="93" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsj-7i-WQH">
+                                <rect key="frame" x="74" y="315" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0" id="cJM-b0-Hbg">
                                     <font key="font" metaFont="system"/>
@@ -196,15 +199,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6a0-Vc-ep5">
-                                <rect key="frame" x="74" y="67" width="245" height="19"/>
+                                <rect key="frame" x="74" y="289" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" tickMarkPosition="above" sliderType="linear" id="GnO-p6-EJG"/>
                                 <connections>
                                     <action selector="releaseDurationSliderSlid:" target="XfG-lQ-9wD" id="M4v-f8-wJi"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-aF-ISK">
-                                <rect key="frame" x="74" y="44" width="152" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-aF-ISK">
+                                <rect key="frame" x="74" y="266" width="152" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="pulseWidth:0.5" id="vaU-jo-Yqc">
                                     <font key="font" metaFont="system"/>
@@ -213,15 +216,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WoU-Kt-ots" userLabel="Pulse Width Slider">
-                                <rect key="frame" x="74" y="18" width="245" height="19"/>
+                                <rect key="frame" x="74" y="240" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" sliderType="linear" id="6v5-OL-JF3"/>
                                 <connections>
                                     <action selector="pulseWidthSliderSlid:" target="XfG-lQ-9wD" id="Nxl-5O-yz7"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eT0-4p-uDa">
-                                <rect key="frame" x="323" y="216" width="52" height="41"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eT0-4p-uDa">
+                                <rect key="frame" x="323" y="438" width="52" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="LPF -" id="Zbv-97-hhC">
                                     <font key="font" metaFont="system"/>
@@ -230,11 +233,45 @@
                                 </textFieldCell>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wa-MK-mav" userLabel="Volume Slider">
-                                <rect key="frame" x="339" y="17" width="19" height="193"/>
+                                <rect key="frame" x="339" y="141" width="19" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" minValue="4" maxValue="10" doubleValue="10" tickMarkPosition="right" sliderType="linear" id="oea-zH-JdS"/>
                                 <connections>
                                     <action selector="lpfSliderSlid:" target="XfG-lQ-9wD" id="MTf-kD-jW5"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZFz-qB-h15">
+                                <rect key="frame" x="74" y="217" width="245" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="vibratoDepth:0" id="a5n-KF-CB4">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kpu-4r-laC">
+                                <rect key="frame" x="74" y="191" width="245" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" tickMarkPosition="above" sliderType="linear" id="8UU-ze-vNz"/>
+                                <connections>
+                                    <action selector="releaseDurationSliderSlid:" target="XfG-lQ-9wD" id="7WJ-rJ-BJF"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6l5-S1-zeZ">
+                                <rect key="frame" x="74" y="168" width="152" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="vibratoRate:0" id="Hwx-7f-dlt">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="flN-G1-rHf" userLabel="Pulse Width Slider">
+                                <rect key="frame" x="74" y="142" width="245" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="8" tickMarkPosition="above" sliderType="linear" id="c30-hx-5jD"/>
+                                <connections>
+                                    <action selector="pulseWidthSliderSlid:" target="XfG-lQ-9wD" id="2Dt-gT-UJ1"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -251,12 +288,12 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="1779"/>
+            <point key="canvasLocation" x="-708" y="1889.5"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="yyL-9h-yPI">
             <objects>
-                <tabViewController id="dQz-34-Nkl" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="dQz-34-Nkl" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="KKp-zw-rgG"/>
                         <tabViewItem id="V8I-2O-G3U"/>
@@ -268,8 +305,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
                         <tabViewItems/>
+                        <connections>
+                            <outlet property="delegate" destination="dQz-34-Nkl" id="36k-ZG-Ssx"/>
+                        </connections>
                     </tabView>
                     <connections>
+                        <outlet property="tabView" destination="wBc-Hv-d9Q" id="sAA-ea-8bQ"/>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="tabItems" id="Unf-BS-YzQ"/>
                         <segue destination="exy-sg-ahZ" kind="relationship" relationship="tabItems" id="bBD-kN-xkE"/>
                         <segue destination="qt2-Ff-0gA" kind="relationship" relationship="tabItems" id="KqB-jz-yBx"/>
@@ -285,11 +326,11 @@
             <objects>
                 <viewController title="Sawtooth" id="exy-sg-ahZ" customClass="KKSawtoothViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="6gH-F8-29T">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="277"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="375"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oft-6S-r8m">
-                                <rect key="frame" x="18" y="216" width="52" height="41"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oft-6S-r8m">
+                                <rect key="frame" x="18" y="314" width="52" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" id="6ik-nM-57b">
                                     <font key="font" metaFont="system"/>
@@ -300,15 +341,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ub0-qw-gJQ" userLabel="Volume Slider">
-                                <rect key="frame" x="34" y="17" width="19" height="193"/>
+                                <rect key="frame" x="34" y="17" width="19" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="right" sliderType="linear" id="4aj-U7-fX0"/>
                                 <connections>
                                     <action selector="volumeSliderSlid:" target="exy-sg-ahZ" id="i2U-b9-xdj"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ds-vn-wam">
-                                <rect key="frame" x="74" y="240" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ds-vn-wam">
+                                <rect key="frame" x="74" y="338" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0.005" id="5Zh-eF-68D">
                                     <font key="font" metaFont="system"/>
@@ -317,15 +358,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEh-gE-318" userLabel="Attack Duration Slider">
-                                <rect key="frame" x="74" y="214" width="245" height="19"/>
+                                <rect key="frame" x="74" y="312" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="8fe-oW-S5l"/>
                                 <connections>
                                     <action selector="attackDurationSliderSlid:" target="exy-sg-ahZ" id="16d-1B-TUT"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41l-c4-PYH">
-                                <rect key="frame" x="74" y="191" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41l-c4-PYH">
+                                <rect key="frame" x="74" y="289" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="decayDuration:0" id="bw7-jR-wEk">
                                     <font key="font" metaFont="system"/>
@@ -334,15 +375,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTU-Td-DxY" userLabel="Decay Duration Slider">
-                                <rect key="frame" x="74" y="165" width="245" height="19"/>
+                                <rect key="frame" x="74" y="263" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="dlI-BW-Rap"/>
                                 <connections>
                                     <action selector="decayDurationSliderSlid:" target="exy-sg-ahZ" id="0QH-Lu-ra1"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S88-12-ETs" userLabel="Sustain Level Label">
-                                <rect key="frame" x="74" y="142" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S88-12-ETs" userLabel="Sustain Level Label">
+                                <rect key="frame" x="74" y="240" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="sustainLevel:1" id="mSx-yJ-aE0">
                                     <font key="font" metaFont="system"/>
@@ -351,15 +392,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsX-bm-mwg" userLabel="Sustain Level Slider">
-                                <rect key="frame" x="74" y="116" width="245" height="19"/>
+                                <rect key="frame" x="74" y="214" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="S6w-AF-1Z2"/>
                                 <connections>
                                     <action selector="sustainLevelSliderSlid:" target="exy-sg-ahZ" id="Xhh-4R-Spk"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-Uw-fBf">
-                                <rect key="frame" x="74" y="93" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-Uw-fBf">
+                                <rect key="frame" x="74" y="191" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0.005" id="E7u-XK-rnx">
                                     <font key="font" metaFont="system"/>
@@ -368,15 +409,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjx-Ym-t3O">
-                                <rect key="frame" x="74" y="67" width="245" height="19"/>
+                                <rect key="frame" x="74" y="165" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="TLn-uG-yWa"/>
                                 <connections>
                                     <action selector="releaseDurationSliderSlid:" target="exy-sg-ahZ" id="fVr-0X-3NX"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbv-by-FkV">
-                                <rect key="frame" x="323" y="216" width="52" height="41"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbv-by-FkV">
+                                <rect key="frame" x="323" y="314" width="52" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="LPF -" id="BPf-ho-X6Q">
                                     <font key="font" metaFont="system"/>
@@ -385,11 +426,45 @@
                                 </textFieldCell>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6G-dd-16x" userLabel="Volume Slider">
-                                <rect key="frame" x="339" y="17" width="19" height="193"/>
+                                <rect key="frame" x="339" y="17" width="19" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" minValue="4" maxValue="10" doubleValue="10" tickMarkPosition="right" sliderType="linear" id="4Gm-hl-xry"/>
                                 <connections>
                                     <action selector="lpfSliderSlid:" target="exy-sg-ahZ" id="Rlk-s1-jAM"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEc-sW-ZHB">
+                                <rect key="frame" x="74" y="142" width="245" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="vibratoDepth:0" id="zeF-3f-9HT">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLg-36-QLR">
+                                <rect key="frame" x="74" y="116" width="245" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" tickMarkPosition="above" sliderType="linear" id="gSy-84-zUy"/>
+                                <connections>
+                                    <action selector="releaseDurationSliderSlid:" target="XfG-lQ-9wD" id="JEn-P8-PGd"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koB-ud-08X">
+                                <rect key="frame" x="74" y="93" width="152" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="vibratoRate:0" id="iNb-pY-QnY">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wd-lQ-2Iv" userLabel="Pulse Width Slider">
+                                <rect key="frame" x="74" y="67" width="245" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="8" tickMarkPosition="above" sliderType="linear" id="g3I-gx-2R9"/>
+                                <connections>
+                                    <action selector="pulseWidthSliderSlid:" target="XfG-lQ-9wD" id="Hmq-Kd-cOb"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -405,18 +480,18 @@
                 </viewController>
                 <customObject id="VKW-qR-V4L" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-288.5" y="1778.5"/>
+            <point key="canvasLocation" x="-288.5" y="1827.5"/>
         </scene>
         <!--Sine-->
         <scene sceneID="fcA-xo-smk">
             <objects>
                 <viewController title="Sine" id="qt2-Ff-0gA" customClass="KKSineWaveViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="VZ2-Tq-eMs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="277"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="375"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6Y-3z-a8d">
-                                <rect key="frame" x="18" y="216" width="52" height="41"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6Y-3z-a8d">
+                                <rect key="frame" x="18" y="314" width="52" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" id="2FK-vg-9Cg">
                                     <font key="font" metaFont="system"/>
@@ -427,15 +502,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYX-HI-pmu" userLabel="Volume Slider">
-                                <rect key="frame" x="34" y="17" width="19" height="193"/>
+                                <rect key="frame" x="34" y="17" width="19" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="Znn-Iu-xEa"/>
                                 <connections>
                                     <action selector="volumeSliderSlid:" target="qt2-Ff-0gA" id="GAD-XG-iPa"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-qY-IWn">
-                                <rect key="frame" x="74" y="240" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-qY-IWn">
+                                <rect key="frame" x="74" y="338" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0.005" id="tEl-4N-CWn">
                                     <font key="font" metaFont="system"/>
@@ -444,15 +519,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fjx-7E-jum" userLabel="Attack Duration Slider">
-                                <rect key="frame" x="74" y="214" width="245" height="19"/>
+                                <rect key="frame" x="74" y="312" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="UJ3-iF-mts"/>
                                 <connections>
                                     <action selector="attackDurationSliderSlid:" target="qt2-Ff-0gA" id="lHv-P9-ojT"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9C-V5-tb7">
-                                <rect key="frame" x="74" y="191" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9C-V5-tb7">
+                                <rect key="frame" x="74" y="289" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="decayDuration:0" id="gvB-ex-sD4">
                                     <font key="font" metaFont="system"/>
@@ -461,15 +536,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yeL-ia-N2W" userLabel="Decay Duration Slider">
-                                <rect key="frame" x="74" y="165" width="245" height="19"/>
+                                <rect key="frame" x="74" y="263" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="vOE-Ts-n60"/>
                                 <connections>
                                     <action selector="decayDurationSliderSlid:" target="qt2-Ff-0gA" id="xoK-oa-lyq"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kq-9y-sH4" userLabel="Sustain Level Label">
-                                <rect key="frame" x="74" y="142" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kq-9y-sH4" userLabel="Sustain Level Label">
+                                <rect key="frame" x="74" y="240" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="sustainLevel:1" id="46A-Yh-Gb3">
                                     <font key="font" metaFont="system"/>
@@ -478,15 +553,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-Ls-vzi" userLabel="Sustain Level Slider">
-                                <rect key="frame" x="74" y="116" width="245" height="19"/>
+                                <rect key="frame" x="74" y="214" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="Xv1-fY-7RU"/>
                                 <connections>
                                     <action selector="sustainLevelSliderSlid:" target="qt2-Ff-0gA" id="QsW-kE-Ld4"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-Jw-754">
-                                <rect key="frame" x="74" y="93" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-Jw-754">
+                                <rect key="frame" x="74" y="191" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0.005" id="LAu-2h-Bmh">
                                     <font key="font" metaFont="system"/>
@@ -495,15 +570,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgX-PF-Dwc">
-                                <rect key="frame" x="74" y="67" width="245" height="19"/>
+                                <rect key="frame" x="74" y="165" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="WUF-vt-p9l"/>
                                 <connections>
                                     <action selector="releaseDurationSliderSlid:" target="qt2-Ff-0gA" id="tAl-h4-eMO"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ldf-6z-ijJ">
-                                <rect key="frame" x="323" y="216" width="52" height="41"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ldf-6z-ijJ">
+                                <rect key="frame" x="323" y="314" width="52" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="LPF -" id="MGs-uK-lVr">
                                     <font key="font" metaFont="system"/>
@@ -512,11 +587,45 @@
                                 </textFieldCell>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="teh-fR-GMv" userLabel="Volume Slider">
-                                <rect key="frame" x="339" y="17" width="19" height="193"/>
+                                <rect key="frame" x="339" y="17" width="19" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" minValue="4" maxValue="10" doubleValue="10" tickMarkPosition="right" sliderType="linear" id="PAE-Cf-PWv"/>
                                 <connections>
                                     <action selector="lpfSliderSlid:" target="qt2-Ff-0gA" id="ZAJ-2x-aYQ"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bH7-OY-w7X">
+                                <rect key="frame" x="74" y="142" width="245" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="vibratoDepth:0" id="cHf-bu-zdX">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GUi-uT-Zq4">
+                                <rect key="frame" x="74" y="116" width="245" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" tickMarkPosition="above" sliderType="linear" id="MjY-27-nk2"/>
+                                <connections>
+                                    <action selector="releaseDurationSliderSlid:" target="XfG-lQ-9wD" id="ggY-9y-64V"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hub-rE-KQd">
+                                <rect key="frame" x="74" y="93" width="152" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="vibratoRate:0" id="y5T-yS-vYN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-cH-qvS" userLabel="Pulse Width Slider">
+                                <rect key="frame" x="74" y="67" width="245" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="8" tickMarkPosition="above" sliderType="linear" id="7It-HN-gTM"/>
+                                <connections>
+                                    <action selector="pulseWidthSliderSlid:" target="XfG-lQ-9wD" id="s8e-2d-ZGC"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -532,18 +641,18 @@
                 </viewController>
                 <customObject id="cvf-tF-hK5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141.5" y="1778.5"/>
+            <point key="canvasLocation" x="141.5" y="1827.5"/>
         </scene>
         <!--Triangle-->
         <scene sceneID="gYk-FH-XZX">
             <objects>
                 <viewController title="Triangle" id="ta7-h7-NG7" customClass="KKTriangleViewController" customModule="KeyboardKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="LVn-wc-3KS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="277"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="530"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-Vd-UuW">
-                                <rect key="frame" x="18" y="216" width="52" height="41"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-Vd-UuW">
+                                <rect key="frame" x="18" y="469" width="52" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" id="iVn-cs-8p8">
                                     <font key="font" metaFont="system"/>
@@ -554,15 +663,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXf-JT-IMn" userLabel="Volume Slider">
-                                <rect key="frame" x="34" y="17" width="19" height="193"/>
+                                <rect key="frame" x="34" y="172" width="19" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="right" sliderType="linear" id="h28-F2-P1x"/>
                                 <connections>
                                     <action selector="volumeSliderSlid:" target="ta7-h7-NG7" id="Rxs-wQ-eiR"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Isk-TS-bOh">
-                                <rect key="frame" x="74" y="240" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Isk-TS-bOh">
+                                <rect key="frame" x="74" y="493" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="attackDuration:0.005" id="m7m-00-59o">
                                     <font key="font" metaFont="system"/>
@@ -571,15 +680,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-aC-vAw" userLabel="Attack Duration Slider">
-                                <rect key="frame" x="74" y="214" width="245" height="19"/>
+                                <rect key="frame" x="74" y="467" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="0.5" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="qzh-v4-k7r"/>
                                 <connections>
                                     <action selector="attackDurationSliderSlid:" target="ta7-h7-NG7" id="hDd-Kp-Nhc"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZpK-2X-wrV">
-                                <rect key="frame" x="74" y="191" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZpK-2X-wrV">
+                                <rect key="frame" x="74" y="444" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="decayDuration:0" id="sNl-6Y-Um5">
                                     <font key="font" metaFont="system"/>
@@ -588,15 +697,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Idx-w1-jv0" userLabel="Decay Duration Slider">
-                                <rect key="frame" x="74" y="165" width="245" height="19"/>
+                                <rect key="frame" x="74" y="418" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="c50-cD-myV"/>
                                 <connections>
                                     <action selector="decayDurationSliderSlid:" target="ta7-h7-NG7" id="Pts-WZ-EV3"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eoh-R9-7KQ" userLabel="Sustain Level Label">
-                                <rect key="frame" x="74" y="142" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eoh-R9-7KQ" userLabel="Sustain Level Label">
+                                <rect key="frame" x="74" y="395" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="sustainLevel:1" id="qOL-8S-Tfm">
                                     <font key="font" metaFont="system"/>
@@ -605,15 +714,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wbj-iw-hgI" userLabel="Sustain Level Slider">
-                                <rect key="frame" x="74" y="116" width="245" height="19"/>
+                                <rect key="frame" x="74" y="369" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="cSM-PR-hwz"/>
                                 <connections>
                                     <action selector="sustainLevelSliderSlid:" target="ta7-h7-NG7" id="yb9-pF-ojV"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAZ-WA-ghy">
-                                <rect key="frame" x="74" y="93" width="245" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAZ-WA-ghy">
+                                <rect key="frame" x="74" y="346" width="245" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="releaseDuration:0.005" id="6zO-my-ViH">
                                     <font key="font" metaFont="system"/>
@@ -622,15 +731,15 @@
                                 </textFieldCell>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BS-Ug-nKS">
-                                <rect key="frame" x="74" y="67" width="245" height="19"/>
+                                <rect key="frame" x="74" y="320" width="245" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" doubleValue="0.0050000000000000001" tickMarkPosition="above" sliderType="linear" id="YEQ-pH-m6v"/>
                                 <connections>
                                     <action selector="releaseDurationSliderSlid:" target="ta7-h7-NG7" id="8jv-iG-DEC"/>
                                 </connections>
                             </slider>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fa7-tY-EYz">
-                                <rect key="frame" x="323" y="216" width="52" height="41"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fa7-tY-EYz">
+                                <rect key="frame" x="323" y="469" width="52" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="LPF -" id="HR4-az-URR">
                                     <font key="font" metaFont="system"/>
@@ -639,11 +748,45 @@
                                 </textFieldCell>
                             </textField>
                             <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-aD-BWL" userLabel="Volume Slider">
-                                <rect key="frame" x="339" y="17" width="19" height="193"/>
+                                <rect key="frame" x="339" y="172" width="19" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" minValue="4" maxValue="10" doubleValue="10" tickMarkPosition="right" sliderType="linear" id="trv-Xz-QDc"/>
                                 <connections>
                                     <action selector="lpfSliderSlid:" target="ta7-h7-NG7" id="y1g-q8-MNo"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wen-3L-gMu">
+                                <rect key="frame" x="74" y="297" width="245" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="vibratoDepth:0" id="RRZ-7j-fLD">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vvg-nO-OZP">
+                                <rect key="frame" x="74" y="271" width="245" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="2" tickMarkPosition="above" sliderType="linear" id="mwK-qF-Hst"/>
+                                <connections>
+                                    <action selector="releaseDurationSliderSlid:" target="XfG-lQ-9wD" id="7VJ-sk-bOl"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kNv-xp-GAT">
+                                <rect key="frame" x="74" y="248" width="152" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="vibratoRate:0" id="laP-BL-OrN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBn-lU-M4k" userLabel="Pulse Width Slider">
+                                <rect key="frame" x="74" y="222" width="245" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" continuous="YES" refusesFirstResponder="YES" state="on" alignment="left" maxValue="8" tickMarkPosition="above" sliderType="linear" id="8Jn-zh-tb0"/>
+                                <connections>
+                                    <action selector="pulseWidthSliderSlid:" target="XfG-lQ-9wD" id="P2G-NZ-rWo"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -659,7 +802,7 @@
                 </viewController>
                 <customObject id="mNj-nS-kLd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620" y="1779"/>
+            <point key="canvasLocation" x="619.5" y="1905"/>
         </scene>
     </scenes>
 </document>

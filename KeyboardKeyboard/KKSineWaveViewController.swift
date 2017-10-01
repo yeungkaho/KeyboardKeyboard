@@ -30,6 +30,7 @@ class KKSineWaveViewController: NSViewController {
         mixer.volume = 1.0
         mixer.connect(lpf!)
         KKInstrument.sharedInstance.mixer.connect(mixer)
+        
     }
     
     override func viewWillAppear() {

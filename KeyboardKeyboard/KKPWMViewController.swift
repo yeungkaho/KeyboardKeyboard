@@ -24,7 +24,8 @@ class KKPWMViewController: NSViewController {
         instrument.releaseDuration = 0.0
         instrument.sustainLevel = 1
         instrument.pulseWidth = 0.5
-        
+        instrument.vibratoDepth = 0.25
+        instrument.vibratoRate = 4
         lpf = AKLowPassFilter(instrument)
         lpf?.cutoffFrequency = 22050
         mixer.volume = 0.5

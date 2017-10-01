@@ -12,6 +12,13 @@
 		454C5C2B1E9FAF8C0024878B /* KKSineWaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C5C281E9FAF8C0024878B /* KKSineWaveViewController.swift */; };
 		454C5C2C1E9FAF8C0024878B /* KKTriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C5C291E9FAF8C0024878B /* KKTriangleViewController.swift */; };
 		4566D77D1ED96D730055DC8F /* KKRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566D77C1ED96D730055DC8F /* KKRecorder.swift */; };
+		457894041F794DEC007D7D59 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457894031F794D92007D7D59 /* AudioKit.framework */; };
+		457894051F794DEC007D7D59 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 457894031F794D92007D7D59 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		457894061F794DEC007D7D59 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457894021F794D92007D7D59 /* AudioKitUI.framework */; };
+		457894071F794DEC007D7D59 /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 457894021F794D92007D7D59 /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		457894091F795D87007D7D59 /* KKInstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457894081F795D87007D7D59 /* KKInstrumentViewController.swift */; };
+		4578940B1F79675B007D7D59 /* ResizingTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578940A1F79675B007D7D59 /* ResizingTabViewController.swift */; };
+		4578940D1F796888007D7D59 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578940C1F796888007D7D59 /* main.swift */; };
 		525873E41C76B511003E9DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873E31C76B511003E9DBB /* AppDelegate.swift */; };
 		525873E81C76B511003E9DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525873E71C76B511003E9DBB /* Assets.xcassets */; };
 		525873EB1C76B511003E9DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525873E91C76B511003E9DBB /* Main.storyboard */; };
@@ -27,6 +34,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				457894071F794DEC007D7D59 /* AudioKitUI.framework in Embed Frameworks */,
+				457894051F794DEC007D7D59 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +48,11 @@
 		454C5C281E9FAF8C0024878B /* KKSineWaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKSineWaveViewController.swift; sourceTree = "<group>"; };
 		454C5C291E9FAF8C0024878B /* KKTriangleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKTriangleViewController.swift; sourceTree = "<group>"; };
 		4566D77C1ED96D730055DC8F /* KKRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKRecorder.swift; sourceTree = "<group>"; };
+		457894021F794D92007D7D59 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = Frameworks/AudioKitUI.framework; sourceTree = "<group>"; };
+		457894031F794D92007D7D59 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Frameworks/AudioKit.framework; sourceTree = "<group>"; };
+		457894081F795D87007D7D59 /* KKInstrumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKInstrumentViewController.swift; sourceTree = "<group>"; };
+		4578940A1F79675B007D7D59 /* ResizingTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingTabViewController.swift; sourceTree = "<group>"; };
+		4578940C1F796888007D7D59 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4833408AE8D1580FE86CA901 /* Pods-KeyboardKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		525873E01C76B511003E9DBB /* KeyboardKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525873E31C76B511003E9DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457894061F794DEC007D7D59 /* AudioKitUI.framework in Frameworks */,
+				457894041F794DEC007D7D59 /* AudioKit.framework in Frameworks */,
 				5656405DBA69804ED3CD81BF /* Pods_KeyboardKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,14 +100,17 @@
 		525873E21C76B511003E9DBB /* KeyboardKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4578940A1F79675B007D7D59 /* ResizingTabViewController.swift */,
 				525873E31C76B511003E9DBB /* AppDelegate.swift */,
 				454C5C251E9FAF700024878B /* KKPWMViewController.swift */,
 				454C5C271E9FAF8C0024878B /* KKSawtoothViewController.swift */,
 				454C5C281E9FAF8C0024878B /* KKSineWaveViewController.swift */,
 				454C5C291E9FAF8C0024878B /* KKTriangleViewController.swift */,
+				457894081F795D87007D7D59 /* KKInstrumentViewController.swift */,
 				525873F21C76CD5C003E9DBB /* KKWindow.swift */,
 				525873F41C76EA6D003E9DBB /* KKInstrument.swift */,
 				4566D77C1ED96D730055DC8F /* KKRecorder.swift */,
+				4578940C1F796888007D7D59 /* main.swift */,
 				525873E71C76B511003E9DBB /* Assets.xcassets */,
 				525873E91C76B511003E9DBB /* Main.storyboard */,
 				525873EC1C76B511003E9DBB /* Info.plist */,
@@ -102,6 +121,8 @@
 		5E6B13B6033D846640F317AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				457894031F794D92007D7D59 /* AudioKit.framework */,
+				457894021F794D92007D7D59 /* AudioKitUI.framework */,
 				D4431F09136A1148C7F230DB /* Pods_KeyboardKeyboard.framework */,
 			);
 			name = Frameworks;
@@ -209,13 +230,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeyboardKeyboard-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8DD5512F0BD9755114F0605 /* [CP] Embed Pods Frameworks */ = {
@@ -246,6 +270,9 @@
 				525873F31C76CD5C003E9DBB /* KKWindow.swift in Sources */,
 				454C5C2B1E9FAF8C0024878B /* KKSineWaveViewController.swift in Sources */,
 				454C5C261E9FAF700024878B /* KKPWMViewController.swift in Sources */,
+				457894091F795D87007D7D59 /* KKInstrumentViewController.swift in Sources */,
+				4578940D1F796888007D7D59 /* main.swift in Sources */,
+				4578940B1F79675B007D7D59 /* ResizingTabViewController.swift in Sources */,
 				454C5C2C1E9FAF8C0024878B /* KKTriangleViewController.swift in Sources */,
 				4566D77D1ED96D730055DC8F /* KKRecorder.swift in Sources */,
 			);
@@ -363,6 +390,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/AudioKit/macOS",
 					"${SRCROOT}/Pods/**",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = KeyboardKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -384,6 +412,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/AudioKit/macOS",
 					"${SRCROOT}/Pods/**",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = KeyboardKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
