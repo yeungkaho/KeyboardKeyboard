@@ -9,7 +9,6 @@
 import Foundation
 import AudioKit
 
-
 class KKRecorder {
     static let sharedInstance = KKRecorder()
     
@@ -37,7 +36,7 @@ class KKRecorder {
             KKRecorder.sharedInstance.recorder = recorder
             KKRecorder.sharedInstance.file = file
             KKRecorder.sharedInstance.player = try AKAudioPlayer(file: file)
-            KKInstrument.sharedInstance.mixer.connect(KKRecorder.sharedInstance.player)
+            KKRecorder.sharedInstance.player?.connect(to:KKInstrument.sharedInstance.mixer)
                 
         } catch {
             AKLog("Couldn't initialize recorder")
@@ -80,7 +79,7 @@ class KKRecorder {
         let outputURL = documentsDirectory.appendingPathComponent(fileName)
         
         exporter?.outputURL = outputURL
-        exporter?.outputFileType = AVFileTypeMPEG4
+        exporter?.outputFileType = AVFileType.mp4
         
         exporter?.exportAsynchronously(completionHandler: {})
         
