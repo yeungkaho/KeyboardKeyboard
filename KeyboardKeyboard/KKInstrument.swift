@@ -79,7 +79,7 @@ class KKInstrument {
     var mixer = AKMixer()
     var outMixer = AKMixer()
     fileprivate init () {
-        outMixer.connect(mixer)
+        mixer.connect(to:outMixer)
         AudioKit.output = outMixer
         AudioKit.start()
     }
@@ -155,6 +155,18 @@ class KKInstrument {
             //F10: save recording
             KKRecorder.sharedInstance.saveRecording()
             return
+        } else if theEvent.keyCode == 122 {
+            //F1
+            AppDelegate.shared.chooseInstrument(0)
+        } else if theEvent.keyCode == 120 {
+            //F2
+            AppDelegate.shared.chooseInstrument(1)
+        } else if theEvent.keyCode == 99 {
+            //F3
+            AppDelegate.shared.chooseInstrument(2)
+        } else if theEvent.keyCode == 118 {
+            //F4
+            AppDelegate.shared.chooseInstrument(3)
         }
         
         if let note = keyMap[theEvent.keyCode] {
