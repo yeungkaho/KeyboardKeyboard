@@ -13,8 +13,6 @@ class KKInstrument {
     
     static let sharedInstance = KKInstrument()
     
-    weak var window:NSWindow?
-    
     let keyMap:Dictionary<UInt16,Int> = [
         6:0,
         1:1,
@@ -115,7 +113,7 @@ class KKInstrument {
             //ignore repeats or command key shortcuts
             if(theEvent.keyCode == 12 && theEvent.modifierFlags.contains(.command)) {
                 //cmd+q: exit app
-                exit(0);
+                NSApplication.shared.terminate(nil)
             }
             return
         }
@@ -141,7 +139,7 @@ class KKInstrument {
             //`:mono/poly switch
             killAll()
             isMonophonic = !isMonophonic
-            window!.title = "KeyboardKeyboard" + (isMonophonic ? "(mono)":"")
+            AppDelegate.shared.window!.title = "KeyboardKeyboard" + (isMonophonic ? "(mono)":"")
             return
         } else if theEvent.keyCode == 98 {
             //F7: play recording

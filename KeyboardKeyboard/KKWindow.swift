@@ -18,8 +18,4 @@ class KKWindow: NSWindow {
     override func keyUp(with theEvent: NSEvent) {
         KKInstrument.sharedInstance.keyUp(theEvent)
     }
-    override init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backing bufferingType: NSWindow.BackingStoreType, defer flag: Bool) {
-        super.init(contentRect: contentRect, styleMask: style, backing: bufferingType, defer: flag)
-        KKInstrument.sharedInstance.window = self
-    }
 }

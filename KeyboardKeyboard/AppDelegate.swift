@@ -126,6 +126,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTabViewDelegate {
         tabView.selectTabViewItem(at: index)
 //        resize()
     }
+    
+    func applicationWillTerminate(_ notification: Notification) {
+        print("will terminate");
+        //setting persistence manager does its job now
+        
+    }
 }
 
  
