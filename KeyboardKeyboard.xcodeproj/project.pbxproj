@@ -13,7 +13,6 @@
 		457894061F794DEC007D7D59 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457894021F794D92007D7D59 /* AudioKitUI.framework */; };
 		457894071F794DEC007D7D59 /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 457894021F794D92007D7D59 /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		457894091F795D87007D7D59 /* KKInstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457894081F795D87007D7D59 /* KKInstrumentViewController.swift */; };
-		4578940B1F79675B007D7D59 /* ResizingTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578940A1F79675B007D7D59 /* ResizingTabViewController.swift */; };
 		4578940D1F796888007D7D59 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578940C1F796888007D7D59 /* main.swift */; };
 		525873E41C76B511003E9DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873E31C76B511003E9DBB /* AppDelegate.swift */; };
 		525873E81C76B511003E9DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525873E71C76B511003E9DBB /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 		457894021F794D92007D7D59 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = Frameworks/AudioKitUI.framework; sourceTree = "<group>"; };
 		457894031F794D92007D7D59 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Frameworks/AudioKit.framework; sourceTree = "<group>"; };
 		457894081F795D87007D7D59 /* KKInstrumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKInstrumentViewController.swift; sourceTree = "<group>"; };
-		4578940A1F79675B007D7D59 /* ResizingTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingTabViewController.swift; sourceTree = "<group>"; };
 		4578940C1F796888007D7D59 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4833408AE8D1580FE86CA901 /* Pods-KeyboardKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		525873E01C76B511003E9DBB /* KeyboardKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				525873E31C76B511003E9DBB /* AppDelegate.swift */,
-				4578940A1F79675B007D7D59 /* ResizingTabViewController.swift */,
 				457894081F795D87007D7D59 /* KKInstrumentViewController.swift */,
 				525873F21C76CD5C003E9DBB /* KKWindow.swift */,
 				525873F41C76EA6D003E9DBB /* KKInstrument.swift */,
@@ -256,7 +253,6 @@
 				525873F31C76CD5C003E9DBB /* KKWindow.swift in Sources */,
 				457894091F795D87007D7D59 /* KKInstrumentViewController.swift in Sources */,
 				4578940D1F796888007D7D59 /* main.swift in Sources */,
-				4578940B1F79675B007D7D59 /* ResizingTabViewController.swift in Sources */,
 				4566D77D1ED96D730055DC8F /* KKRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
