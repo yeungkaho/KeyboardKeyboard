@@ -113,7 +113,7 @@ class KKInstrument {
     func keyDown(_ theEvent: NSEvent) {
         if theEvent.isARepeat || theEvent.modifierFlags.contains(.command){
             //ignore repeats or command key shortcuts
-            if(theEvent.keyCode == 12) {
+            if(theEvent.keyCode == 12 && theEvent.modifierFlags.contains(.command)) {
                 //cmd+q: exit app
                 exit(0);
             }
