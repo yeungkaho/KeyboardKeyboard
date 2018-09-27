@@ -28,7 +28,6 @@ class KKInstrumentViewController: NSViewController, AKKeyboardDelegate{
     let mixer = AKMixer()
     
     var lpf: AKLowPassFilter?
-//    var settingViews = [NSView]()
     
     var slidersHeight:CGFloat {
         return CGFloat(instrumentInfo.count+2) * sliderHeight

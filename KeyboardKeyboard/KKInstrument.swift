@@ -79,7 +79,7 @@ class KKInstrument {
     fileprivate init () {
         mixer.connect(to:outMixer)
         AudioKit.output = outMixer
-        AudioKit.start()
+        try! AudioKit.start()
     }
     
     func keyUp(_ theEvent: NSEvent) {

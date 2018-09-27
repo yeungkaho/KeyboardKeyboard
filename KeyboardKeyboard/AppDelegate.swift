@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTabViewDelegate {
     static let shared = AppDelegate()
     
     func applicationWillBecomeActive(_ notification: Notification) {
-        AudioKit.start()
+        try! AudioKit.start()
     }
     
     let tabView = NSTabView()
@@ -124,7 +124,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSTabViewDelegate {
     
     func chooseInstrument(_ index:Int) {
         tabView.selectTabViewItem(at: index)
-//        resize()
     }
     
     func applicationWillTerminate(_ notification: Notification) {

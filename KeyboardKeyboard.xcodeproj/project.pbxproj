@@ -8,17 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4566D77D1ED96D730055DC8F /* KKRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566D77C1ED96D730055DC8F /* KKRecorder.swift */; };
-		457894041F794DEC007D7D59 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457894031F794D92007D7D59 /* AudioKit.framework */; };
-		457894051F794DEC007D7D59 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 457894031F794D92007D7D59 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		457894061F794DEC007D7D59 /* AudioKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457894021F794D92007D7D59 /* AudioKitUI.framework */; };
-		457894071F794DEC007D7D59 /* AudioKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 457894021F794D92007D7D59 /* AudioKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		457894091F795D87007D7D59 /* KKInstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457894081F795D87007D7D59 /* KKInstrumentViewController.swift */; };
 		4578940D1F796888007D7D59 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578940C1F796888007D7D59 /* main.swift */; };
 		525873E41C76B511003E9DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873E31C76B511003E9DBB /* AppDelegate.swift */; };
 		525873E81C76B511003E9DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525873E71C76B511003E9DBB /* Assets.xcassets */; };
 		525873F31C76CD5C003E9DBB /* KKWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873F21C76CD5C003E9DBB /* KKWindow.swift */; };
 		525873F51C76EA6D003E9DBB /* KKInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525873F41C76EA6D003E9DBB /* KKInstrument.swift */; };
-		5656405DBA69804ED3CD81BF /* Pods_KeyboardKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4431F09136A1148C7F230DB /* Pods_KeyboardKeyboard.framework */; };
+		D24C8D76782F1F9D7670C14B /* Pods_KeyboardKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CAFE9AB0A0E7702DA19550 /* Pods_KeyboardKeyboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,8 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				457894071F794DEC007D7D59 /* AudioKitUI.framework in Embed Frameworks */,
-				457894051F794DEC007D7D59 /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,9 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18CAFE9AB0A0E7702DA19550 /* Pods_KeyboardKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyboardKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4566D77C1ED96D730055DC8F /* KKRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKRecorder.swift; sourceTree = "<group>"; };
-		457894021F794D92007D7D59 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = Frameworks/AudioKitUI.framework; sourceTree = "<group>"; };
-		457894031F794D92007D7D59 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Frameworks/AudioKit.framework; sourceTree = "<group>"; };
 		457894081F795D87007D7D59 /* KKInstrumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKInstrumentViewController.swift; sourceTree = "<group>"; };
 		4578940C1F796888007D7D59 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4833408AE8D1580FE86CA901 /* Pods-KeyboardKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,7 +42,6 @@
 		525873EC1C76B511003E9DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525873F21C76CD5C003E9DBB /* KKWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKWindow.swift; sourceTree = "<group>"; };
 		525873F41C76EA6D003E9DBB /* KKInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKInstrument.swift; sourceTree = "<group>"; };
-		D4431F09136A1148C7F230DB /* Pods_KeyboardKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyboardKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED2F4A012AC9FBB5B7B4262 /* Pods-KeyboardKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyboardKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,9 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				457894061F794DEC007D7D59 /* AudioKitUI.framework in Frameworks */,
-				457894041F794DEC007D7D59 /* AudioKit.framework in Frameworks */,
-				5656405DBA69804ED3CD81BF /* Pods_KeyboardKeyboard.framework in Frameworks */,
+				D24C8D76782F1F9D7670C14B /* Pods_KeyboardKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,9 +93,7 @@
 		5E6B13B6033D846640F317AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				457894031F794D92007D7D59 /* AudioKit.framework */,
-				457894021F794D92007D7D59 /* AudioKitUI.framework */,
-				D4431F09136A1148C7F230DB /* Pods_KeyboardKeyboard.framework */,
+				18CAFE9AB0A0E7702DA19550 /* Pods_KeyboardKeyboard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,7 +119,6 @@
 				525873DD1C76B511003E9DBB /* Frameworks */,
 				525873DE1C76B511003E9DBB /* Resources */,
 				F8DD5512F0BD9755114F0605 /* [CP] Embed Pods Frameworks */,
-				88D29AF286862BC4322DFAF3 /* [CP] Copy Pods Resources */,
 				4527E4FF1E793B2B00D7AD2D /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -155,8 +142,9 @@
 				TargetAttributes = {
 					525873DF1C76B511003E9DBB = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = KN3N6ZJA53;
+						DevelopmentTeam = A7S49QJ3Z2;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -190,21 +178,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		88D29AF286862BC4322DFAF3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BDE02576720889E03DD46E8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,10 +203,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard-frameworks.sh",
+				"${PODS_ROOT}/AudioKit/macOS/AudioKitUI.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,8 +339,10 @@
 			baseConfigurationReference = EED2F4A012AC9FBB5B7B4262 /* Pods-KeyboardKeyboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A7S49QJ3Z2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/AudioKit/macOS",
@@ -377,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TYKH.KeyboardKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -387,8 +365,10 @@
 			baseConfigurationReference = 4833408AE8D1580FE86CA901 /* Pods-KeyboardKeyboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A7S49QJ3Z2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/AudioKit/macOS",
@@ -400,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TYKH.KeyboardKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};

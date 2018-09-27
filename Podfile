@@ -1,5 +1,6 @@
-platform :osx ,'10.11'
+platform :osx ,'10.13'
+use_frameworks!
 target 'KeyboardKeyboard' do
-    use_frameworks!
+    pod 'AudioKit'
     pod 'SnapKit'
 end
