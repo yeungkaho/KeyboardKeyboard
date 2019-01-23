@@ -66,6 +66,7 @@ class KKInstrument {
     var instrument:AKPolyphonicNode? {
         didSet{
             for (_,note) in activeNotesByKeyCode{
+                midi.sendEvent(AKMIDIEvent(noteOff: MIDINoteNumber(note), velocity: 0, channel: 1))
                 oldValue!.stop(noteNumber: MIDINoteNumber(note))
             }
             activeNotesByKeyCode.removeAll()
@@ -74,12 +75,15 @@ class KKInstrument {
     }
     
     
+    let midi = AudioKit.midi
     var mixer = AKMixer()
     var outMixer = AKMixer()
     fileprivate init () {
         mixer.connect(to:outMixer)
         AudioKit.output = outMixer
         try! AudioKit.start()
+        
+        midi.openOutput()
     }
     
     func keyUp(_ theEvent: NSEvent) {
@@ -88,6 +92,7 @@ class KKInstrument {
         }
         
         if let note = activeNotesByKeyCode[theEvent.keyCode] {
+            midi.sendEvent(AKMIDIEvent(noteOff: MIDINoteNumber(note), velocity: 0, channel: 1))
             instrument!.stop(noteNumber: MIDINoteNumber(note))
         }
         
@@ -100,6 +105,8 @@ class KKInstrument {
                 let lastKeyCode = lastKey()
                 let lastNote = activeNotesByKeyCode[lastKeyCode]
                 if (lastNote != nil) {
+                    
+                    midi.sendEvent(AKMIDIEvent(noteOn: MIDINoteNumber(lastNote!), velocity: 64, channel: 1))
                     instrument!.play(noteNumber: MIDINoteNumber(lastNote!), velocity: 127)
                 }
             } else {
@@ -176,16 +183,21 @@ class KKInstrument {
             activeNotesByKeyCode[theEvent.keyCode] = noteToPlay
             if isMonophonic {
                 if (activeNotesByKeyCode[lastKey()] != nil){
+                    
+                    midi.sendEvent(AKMIDIEvent(noteOff: MIDINoteNumber(activeNotesByKeyCode[lastKey()]!), velocity: 0, channel: 1))
                     instrument!.stop(noteNumber: MIDINoteNumber(activeNotesByKeyCode[lastKey()]!))
                 }
                 pushKeyCode(theEvent.keyCode)
             }
+            
+            midi.sendEvent(AKMIDIEvent(noteOn: MIDINoteNumber(noteToPlay), velocity: 64, channel: 1))
             instrument!.play(noteNumber: MIDINoteNumber(noteToPlay),velocity:127)
         }
     }
     
     func killAll() {
         for (_, note) in activeNotesByKeyCode{
+            midi.sendEvent(AKMIDIEvent(noteOff: MIDINoteNumber(note), velocity: 0, channel: 1))
             instrument?.stop(noteNumber: MIDINoteNumber(note))
         }
         activeNotesByKeyCode.removeAll()
