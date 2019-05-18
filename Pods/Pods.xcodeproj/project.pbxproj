@@ -6,467 +6,490 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4903D068F92AE50341BC42AC6BB29FC8 /* AudioKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7F62874C35AE2674095E5AF51C37ABE4 /* Build configuration list for PBXAggregateTarget "AudioKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = AudioKit;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		073D060F96F7F79488348BA97F544E23 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CEA829686AD0A879DDC11E8D0FFB1 /* Constraint.swift */; };
-		11CA79A6A2A56C33A15EA0BDED9303C2 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FA355E935730A7B48CC82B9663D26 /* ConstraintRelation.swift */; };
-		2C8A1824EBC73EBF6E77695A27D7B1DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		2FCD5D0F34311B81455BFD1814AE76BB /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDEAE037190BB93C19C1C6A345562AF /* ConstraintLayoutSupport.swift */; };
-		33421A2C6CAF938EB2A97647002F8284 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2729D673310CB954129F259226C00699 /* ConstraintConstantTarget.swift */; };
-		44E6CBE96E32662C7D83E6A535859F02 /* Pods-KeyboardKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A797A56A3D33863AC352ACAC97FE39B /* Pods-KeyboardKeyboard-dummy.m */; };
-		4D382280E75773F2F4B029CC7AEC237B /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEB2F5C7A17858527B20F306D48FEB /* ConstraintLayoutGuide.swift */; };
-		52619DA7A0254B774CBD3B5EB2E71EA7 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DE9107E263E03B5347E58573F8B6DA /* ConstraintOffsetTarget.swift */; };
-		572F17532C7C6C0EB72D249AA2D0DA39 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21501C973856CF45EA26D074330A426 /* ConstraintViewDSL.swift */; };
-		694BEF8B6CCAD50182EB4885D3631D69 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8EACD1183D69A55CEB2EB3D4DCAEBA /* ConstraintPriorityTarget.swift */; };
-		6BAB0D61B063CD3BB387148A9A4E9018 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07CB2591A718F908958FDCEE27592B /* LayoutConstraintItem.swift */; };
-		6CBC15D9C16DFA6BBAF83D08FFE6F9CA /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604315D41E83F6DA614F88F681EA463 /* ConstraintInsetTarget.swift */; };
-		6D9F71A20EC8C57FA74B6D58ECE4736E /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09090075EC98A061AE6D29E11934615E /* ConstraintMaker.swift */; };
-		6ECF3AEB3B1C9FF3CE7F951735010E52 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80D5D40F2B9695F80A819EA1E7858B /* ConstraintConfig.swift */; };
-		7111E688202380FEFAE42ACC81DE23A2 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BF14DFCFD212CEC7551CCDDDD93E12 /* ConstraintMakerExtendable.swift */; };
-		73725BD4C4E77BD88E275F43ECFA622F /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04475B74C3125BE42E9AD3C144B3A448 /* ConstraintDescription.swift */; };
-		76329CC8ECE7113430A30C59FBF3534C /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1FA9D4C486A44AE6074C8142DE56D /* ConstraintView+Extensions.swift */; };
-		7A3FE147F233DEBCC37A152DCC43777F /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068386A705C38EDD35DE9A9DA1A3A66D /* ConstraintMakerPriortizable.swift */; };
-		7D3881302170EFB20F326F30E4372DD8 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F131EA932E56F3EE272642D83C22C76 /* Debugging.swift */; };
-		7E532AE4D068DD76C5114802E51BAC2A /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0F2ADFFE2E0DD4D5612F51795A048 /* SnapKit-dummy.m */; };
-		81F624E47D7FD1AB83B702EEC7B89343 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618EB7F092744BB647452DC81F7C8CB6 /* UILayoutSupport+Extensions.swift */; };
-		8E0DB0B7DBD129A4ABFAB0E0A66549B5 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FE8C507A6DD50FC6BC5A2BBBBB3F1 /* ConstraintMultiplierTarget.swift */; };
-		8F12B93DB0E18F9B4B4D5F6BD4DF9C68 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC37F7CE2CEAC791CAE2A892D9070BC /* ConstraintLayoutSupportDSL.swift */; };
-		918C72BB6A344927ABB6C2CB272E7D76 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
-		923EE6C3576A521BF3D9F24B0A23A97A /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECEEC8C3701FF017FB3C6F96967A227 /* ConstraintView.swift */; };
-		9560CA875382D80245E3DFD2BBE7BF19 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC381432E9B4FD097AD9ABB52D45E53 /* LayoutConstraint.swift */; };
-		9832AA9F74E6B9134701DB57B5633BAA /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0943AE2EE4168AD21897691D18925 /* Typealiases.swift */; };
-		9EF267854336726947C3069B0B58E377 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1088A2A86DF7761314E775B69A1229B /* ConstraintItem.swift */; };
-		A36D3EC06458D7CC51B18504636A0581 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F590642E36800815405CF0546F02182A /* ConstraintLayoutGuideDSL.swift */; };
-		ADE7AF5BB473075DFD1F6F1213964734 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE57E6164E2553EA6C9478529C9783 /* ConstraintInsets.swift */; };
-		AEC7CE42EAEB0EC2A9403146C3E73966 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B811CAB695CB8F22230476252E0452 /* ConstraintMakerFinalizable.swift */; };
-		CFCEE55079E1BF72D620F3469A3D3881 /* Pods-KeyboardKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58280967F9598BDCD175CDFD8BCEE9E3 /* Pods-KeyboardKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFEAABD2DC3C8DE3E390C394E732643E /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E51BDE18AC8B325594F504E3DACB4F /* ConstraintRelatableTarget.swift */; };
-		DCA7B1840CC3D9B71D54486F4FA4C04F /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960D821D4FD74F2989DC3B0931B306E /* ConstraintMakerRelatable.swift */; };
-		DE8E72F5809E39F0CC6306581D5988C8 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669B7D6E5FB1D885D806B660EF4ACE26 /* ConstraintPriority.swift */; };
-		E13B3B94B690681C7C6D6C4F1AF8F2A3 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9040209D9FA5A5AFBB51EE669B3CF77 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E460C529001221BC9FB100B7A029EA3D /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363DC46864DF0DA2D15E5A5B44E25B51 /* ConstraintMakerEditable.swift */; };
-		F26C54BA623977AC3825063B66D4A7C9 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430F5497E5CE9E17ED4A70D1A3FCA025 /* ConstraintLayoutGuide+Extensions.swift */; };
-		FDEB7E638E6236A26696526543F41107 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A2FFD96313FFED6B116D6E9C928401 /* ConstraintAttributes.swift */; };
-		FEE99E58DD5B228B86243DDDA679F945 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB80AD7849CDDBDB40315FE1898B0B /* ConstraintDSL.swift */; };
+		02CB134B442AE71256883C7E2FD2B948 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292B68B6F519B751D39A3644AD6BA099 /* ConstraintPriority.swift */; };
+		169485CE3602F513915FC0F1B959DD83 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47F465C5EDB0319F1E28089704B0D5 /* LayoutConstraintItem.swift */; };
+		1BF9C7CD8BF467D8DDA92976E9FE36C4 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D00FE86588566D829522DF0504A60 /* ConstraintMaker.swift */; };
+		1CA67A814A3DD8491DE62785EFCFA2E1 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031B66A09A87F8853314183E263B115 /* ConstraintLayoutGuide.swift */; };
+		204AF8EF8B710637D62B9685CA809158 /* Pods-KeyboardKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31638590E6082AA40885A4D3A1CEC8A4 /* Pods-KeyboardKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22B01C97E1B9D5FADC372631E9AB462A /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D22B84C6D446AD44D3DEF410A3453A /* ConstraintRelation.swift */; };
+		27D188009068CDAD29A5B00F6BF5E59B /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067EE29242A675F1B1FC404A19DD8593 /* ConstraintLayoutGuideDSL.swift */; };
+		2DDC064ED3692461DAE7CC37125B7AFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		2F17454CE36C48525C49A423580FC62F /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D67ED68CF63C5692C065A890FD3A14 /* ConstraintMakerExtendable.swift */; };
+		301FE59DD685E48464CB19118A6B1A65 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3E3185E8FDE7DA12A4C95BD64D4BC /* ConstraintPriorityTarget.swift */; };
+		3A06A2E7DF98E826253D3077DD502EFC /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BB18673ED372E3AE89AF169126F7FD /* ConstraintItem.swift */; };
+		3CD6CDFF301C090E276F26BEE8D1B9B4 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF3B6E5580829C35D58826B8DF21CF2 /* ConstraintMakerRelatable.swift */; };
+		436CC01F621C0C7894C6400A63197741 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EE5DEF4F2B1A52465BBD3C2D34A2C3 /* SnapKit-dummy.m */; };
+		463C63E89EEF6B799F27C0F65FC537F7 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E6103904E5C7595EA7718ACE1FB5BC /* ConstraintMultiplierTarget.swift */; };
+		4AD1C246CEA7773DDD10C1248429A776 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D36A3AB6B2D833AE64B00352A6118 /* Constraint.swift */; };
+		53A560ED0C6912E04794CAD66D76A061 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B63BCFEBB433CCE932E7499CA6A91C /* ConstraintView.swift */; };
+		53D6C07A5F968510B9F72199DDC7E077 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFDF869953A2A0315815E8EC11928B /* ConstraintView+Extensions.swift */; };
+		5F96943B8AA81F664FE4A69451B1EE5D /* Pods-KeyboardKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE2483AE0ECA0EBF01BB761037FF09 /* Pods-KeyboardKeyboard-dummy.m */; };
+		61EF341CDCED77D79F6CF5030DBF7771 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		659B03A003D6CA0EA06358494DAEC7C9 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F363466FDFDA9AAD41747DCB0F688A /* ConstraintMakerFinalizable.swift */; };
+		766B22662EBB0F8ED1F0618569A3F4C0 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C12F367F0CF8748DFD7551FFD7B30 /* ConstraintDSL.swift */; };
+		781E90AEEF6D14F95E340EA3B2B4510D /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDE9B0F700F2E5C7CD4905E2532982 /* Typealiases.swift */; };
+		82D917BD06E74E2DBAE4ED95C13A6615 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CCDE5925D21011EE58750572317A89 /* ConstraintConfig.swift */; };
+		8326B9CC5EE581AEF855EDAE5755375E /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 669D44592A661012F9C3A46FAB391570 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BC1E34E3062022BCDAF140A66DB8C20 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C302968838B7EFE23F24415BCFAEC3DD /* ConstraintLayoutSupport.swift */; };
+		B03B55888A7E94159B0C64F120F9A5CF /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6049911E2E5D660B3461A1FFD54E22 /* ConstraintLayoutGuide+Extensions.swift */; };
+		B830A8ABD4C641ABDB0E49CFDB1030C3 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18885999E69ACCE05BB2B78188C4119E /* ConstraintInsets.swift */; };
+		CCD9470243AA35944F15B8D8E498A79C /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E9E2E806A1DD76CE60A6094D14393A /* ConstraintMakerEditable.swift */; };
+		D62FC87A24B5F2EBA6F42F65A72320B3 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941130AD917F2D51CB03F15E478FEEE2 /* ConstraintOffsetTarget.swift */; };
+		D825F42A1C9634174E5089997B2B44CC /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AF2B15AAB676162B87526E0763F4B1 /* LayoutConstraint.swift */; };
+		D95D4C8E55A409F2B174B26FCA0BCBD3 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E84EAEAC3CFDA5D8025F76BD438D9F2 /* ConstraintMakerPriortizable.swift */; };
+		D99FB388897874B6776064D485B02DE4 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A838C788501A546165C6D98BEF1BB8A /* ConstraintRelatableTarget.swift */; };
+		DC2B267D8E15AE2D0E06A270AE35C961 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6292F14599A1606D0EFDEDB2D18D7 /* UILayoutSupport+Extensions.swift */; };
+		E04D2F0C860A83D474E432E0AD130380 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1D8CB8EA7DE40FF0AC5D6E9958D51 /* ConstraintLayoutSupportDSL.swift */; };
+		E22FD5516C1D355B2B62973637BE8D30 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585D4A01057AF41671518BB39B43549 /* ConstraintConstantTarget.swift */; };
+		E2A4E1342AB4B59931F00C0778842E55 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C899A5639C154518628CDB223BF43603 /* ConstraintInsetTarget.swift */; };
+		ECB6DAB85978B572978CE2FE5D8F2B84 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A08B36E772E30C56613AE97B412906 /* ConstraintViewDSL.swift */; };
+		F4BAB294F8901A9194C729FBC4711A8F /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3FF1E30A2600FA91B8B5930B1AF43 /* ConstraintDescription.swift */; };
+		F95E230ECC8B6CE9AB134DB0829875A4 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A12C12F42BEA9A9CC6E8012DA1A4788 /* Debugging.swift */; };
+		F960F2C897633298F5F6D8F3647D224D /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DB0A5E1539253C53E788A545FCEE65 /* ConstraintAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4AD3EA0CB469CEB8B28E70407F3AFB3E /* PBXContainerItemProxy */ = {
+		15870E5DB2DF196098A102D09E82D146 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 59E802576401670094BBD0A6082EA093;
+			remoteGlobalIDString = 366B76CD3FC3CCBB6F0441980BC8EA4C;
 			remoteInfo = SnapKit;
+		};
+		63871E07BA4C9478AA123C7CAE43445B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4903D068F92AE50341BC42AC6BB29FC8;
+			remoteInfo = AudioKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0277858A1583993861546C1BC38E2343 /* AKFMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		04475B74C3125BE42E9AD3C144B3A448 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
-		05CCBC0515A18B5E286D398115B727F8 /* AKOperationGeneratorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationGeneratorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOperationGeneratorAudioUnit.h; sourceTree = "<group>"; };
-		068386A705C38EDD35DE9A9DA1A3A66D /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		090714639DD6CC975CA02748BBEE1664 /* AKOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		09090075EC98A061AE6D29E11934615E /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		09D89D2A10F178882BA5DB3CCE8A461D /* AKGeneratorAudioUnitBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKGeneratorAudioUnitBase.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKGeneratorAudioUnitBase.h; sourceTree = "<group>"; };
-		12A2FFD96313FFED6B116D6E9C928401 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		13ACEEF146E8B616FE94D26A2813EC55 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
-		14ECD386296B6786268FE1F978F4A4D1 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+AudioBufferList.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
-		158CEA829686AD0A879DDC11E8D0FFB1 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		1A797A56A3D33863AC352ACAC97FE39B /* Pods-KeyboardKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeyboardKeyboard-dummy.m"; sourceTree = "<group>"; };
-		1B21028829C499CC324A51CB1F66C671 /* ExceptionCatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExceptionCatcher.h; path = macOS/AudioKit.framework/Versions/A/Headers/ExceptionCatcher.h; sourceTree = "<group>"; };
-		1C80D5D40F2B9695F80A819EA1E7858B /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
-		1DC1C52980CF51C0654543F947623DD0 /* AKMicrophoneTrackerEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMicrophoneTrackerEngine.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMicrophoneTrackerEngine.h; sourceTree = "<group>"; };
-		1EE34F23A6AF7BABF043867913D5F564 /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZRecorder.h; sourceTree = "<group>"; };
-		21B31D375A7E14C56A7BEF2291856D01 /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZOutput.h; sourceTree = "<group>"; };
-		232BBBA905048C0AC38B1CF35B8B376D /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioDevice.h; sourceTree = "<group>"; };
-		25C74483AAD6C9AC103A346127869B92 /* AKTimelineTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTimelineTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTimelineTap.h; sourceTree = "<group>"; };
-		2729D673310CB954129F259226C00699 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		2CB366637F4972CE702CEC2028338745 /* dr_wav.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dr_wav.h; path = macOS/AudioKit.framework/Versions/A/Headers/dr_wav.h; sourceTree = "<group>"; };
-		32306E0122646E8A3CC845BBA69B6854 /* AKBalancerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBalancerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBalancerAudioUnit.h; sourceTree = "<group>"; };
-		34E51BDE18AC8B325594F504E3DACB4F /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		363DC46864DF0DA2D15E5A5B44E25B51 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		377B182E0128EEE80BA602A36E89F7E0 /* AKTubularBellsAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTubularBellsAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTubularBellsAudioUnit.h; sourceTree = "<group>"; };
-		3AC65AD1FC6675EE8FF2716EDEC0E475 /* Pods-KeyboardKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeyboardKeyboard.modulemap"; sourceTree = "<group>"; };
-		3B3BA360986FF20C28BF50EC8DB29900 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ECEEC8C3701FF017FB3C6F96967A227 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		41BD538542A7D4D74254C46C309F740A /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFile.h; sourceTree = "<group>"; };
-		430F5497E5CE9E17ED4A70D1A3FCA025 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		4727A721CBA929BEC432D5DDC150EFB2 /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = macOS/AudioKitUI.framework; sourceTree = "<group>"; };
-		4A18EC5473620D3BC214F2F22A678E6E /* AKShakerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKShakerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKShakerAudioUnit.h; sourceTree = "<group>"; };
-		4AB59DD13F66ABFB35E471AC784D99E4 /* AKTesterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTesterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTesterAudioUnit.h; sourceTree = "<group>"; };
-		4D6400BD4A570E5BE4987B858D6B2AC7 /* Pods-KeyboardKeyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeyboardKeyboard-resources.sh"; sourceTree = "<group>"; };
-		4E07CB2591A718F908958FDCEE27592B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		4EB4F0859D7F62F6783584E82E8A97BF /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioUtilities.h; sourceTree = "<group>"; };
-		5332784236B33A877067668180599B27 /* Pods-KeyboardKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyboardKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		58280967F9598BDCD175CDFD8BCEE9E3 /* Pods-KeyboardKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeyboardKeyboard-umbrella.h"; sourceTree = "<group>"; };
-		5C1D970ED0E3DAA93F6543FE3B6C6AF0 /* AKRhinoGuitarProcessorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRhinoGuitarProcessorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRhinoGuitarProcessorAudioUnit.h; sourceTree = "<group>"; };
-		5C2512E80352998ABE28FDBDD63DD582 /* AKPhaseDistortionOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		5E1FA355E935730A7B48CC82B9663D26 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		618EB7F092744BB647452DC81F7C8CB6 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		63607D7EFEAAD7D401511661A21D006E /* Pods_KeyboardKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeyboardKeyboard.framework; path = "Pods-KeyboardKeyboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63910B8EF219E7242E24DDF4F54C1AC1 /* AKSamplePlayerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSamplePlayerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSamplePlayerAudioUnit.h; sourceTree = "<group>"; };
-		665AAAAAEA1678290AF9AB7279A3C178 /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioPlot.h; sourceTree = "<group>"; };
-		669B7D6E5FB1D885D806B660EF4ACE26 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
-		6823246A917052877C8D374B57D7C9CE /* AKWaveTableAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKWaveTableAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKWaveTableAudioUnit.h; sourceTree = "<group>"; };
-		692D45B56CBC7DEA7E0ABC242CE69793 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		6960D821D4FD74F2989DC3B0931B306E /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		69F278492EC7C63CAD006AF08E4D6CE0 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		6CE6CE962C63BEAF306BEDC4E7BDB159 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer.h; sourceTree = "<group>"; };
-		6EC37F7CE2CEAC791CAE2A892D9070BC /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		758BE3776BADB4AEA8863A253369B216 /* vocwrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vocwrapper.h; path = macOS/AudioKit.framework/Versions/A/Headers/vocwrapper.h; sourceTree = "<group>"; };
-		7C283036404EFD101C91EAAE8102A654 /* AKSporthStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSporthStack.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSporthStack.h; sourceTree = "<group>"; };
-		7CDEAE037190BB93C19C1C6A345562AF /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		7F131EA932E56F3EE272642D83C22C76 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		8103DEA2854776641FF0EFADCB8FCDEF /* AKAudioUnitBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnitBase.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAudioUnitBase.h; sourceTree = "<group>"; };
-		89B0096122BEFB9473CCC2ADB87CB74A /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZPlot.h; sourceTree = "<group>"; };
-		8A233922CD52E930AE1880982C464992 /* soundpipe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = soundpipe.h; path = macOS/AudioKit.framework/Versions/A/Headers/soundpipe.h; sourceTree = "<group>"; };
-		8FE0943AE2EE4168AD21897691D18925 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
-		930C90AF347618E14139E79D088422BD /* AKDynaRageCompressorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDynaRageCompressorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKDynaRageCompressorAudioUnit.h; sourceTree = "<group>"; };
-		931A93AA0DF26B9B2B466F7C02417200 /* AKDiskStreamerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDiskStreamerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKDiskStreamerAudioUnit.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93AA48920B33F0A1A3E0F3BE4C8C5A4C /* AKAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAudioUnit.h; sourceTree = "<group>"; };
-		93E9F096554CF0D3A66F62F197B93E02 /* AKPWMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPWMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		9604315D41E83F6DA614F88F681EA463 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
-		9732987ECBC7F4904D1CE7194FC87DD5 /* AKFrequencyTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFrequencyTrackerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFrequencyTrackerAudioUnit.h; sourceTree = "<group>"; };
-		98B811CAB695CB8F22230476252E0452 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
-		9C38724DBDA6B91CE76D1FA0E43375F2 /* AKSampler_Typedefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSampler_Typedefs.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSampler_Typedefs.h; sourceTree = "<group>"; };
-		9F9502E1A10FB4BC22BC07E44D102049 /* AKConvolutionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKConvolutionAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKConvolutionAudioUnit.h; sourceTree = "<group>"; };
-		A03349E99FF258D5E8032B4E992ED197 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A26C579512CCAB0EC24A48AF8C5E4636 /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZMicrophone.h; sourceTree = "<group>"; };
-		A310C400243315A8F2DCA8F36FF4B589 /* Pods-KeyboardKeyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeyboardKeyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A62AF3739F4B19F671B285AAB7CA670B /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioPlotGL.h; sourceTree = "<group>"; };
-		A88D97DB2E1E9C5F156C7996AB282ADC /* AKOfflineRenderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOfflineRenderAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOfflineRenderAudioUnit.h; sourceTree = "<group>"; };
-		AABB80AD7849CDDBDB40315FE1898B0B /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		ABDEB2F5C7A17858527B20F306D48FEB /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		AC2FE8C507A6DD50FC6BC5A2BBBBB3F1 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		AD10A3403751AA0D42BD93CFBD491D52 /* EZAudioFileMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFileMarker.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFileMarker.h; sourceTree = "<group>"; };
-		B1AEA9D93EAA1087840DD1EA65BC356B /* AKBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBankAudioUnit.h; sourceTree = "<group>"; };
-		B54C7466012974B2D96DB2703E1B7F29 /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFFT.h; sourceTree = "<group>"; };
-		B7492DE20CD446F71E3FCB5A0E50239F /* TPCircularBuffer+Unit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+Unit.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer+Unit.h"; sourceTree = "<group>"; };
-		BADE57E6164E2553EA6C9478529C9783 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		BBCF86BAF730BA840691AF59457AC520 /* AKMorphingOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMorphingOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
-		BE88353A29D66B44BAACC938AA9615E3 /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioPlayer.h; sourceTree = "<group>"; };
-		C21501C973856CF45EA26D074330A426 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		C2C79DBAEF0CE7A3C2F0699D828E6974 /* Pods-KeyboardKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyboardKeyboard.release.xcconfig"; sourceTree = "<group>"; };
-		C7AF9BAABF247460978611B80FC16CD4 /* AudioKitUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKitUI.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/AudioKitUI.h; sourceTree = "<group>"; };
-		CA8EACD1183D69A55CEB2EB3D4DCAEBA /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		CA9A1660759261AC45FA82C5D08CF1ED /* Pods-KeyboardKeyboard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeyboardKeyboard-frameworks.sh"; sourceTree = "<group>"; };
-		CBEC1CDC0F61A4D8C2AAAD1CC0D61014 /* AKInterop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKInterop.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKInterop.h; sourceTree = "<group>"; };
-		CBFBABD3C961A3C439AC916337E5E1C6 /* Pods-KeyboardKeyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeyboardKeyboard-acknowledgements.plist"; sourceTree = "<group>"; };
-		CC13D2A2C50E40F9C6CF0E275D033C35 /* AKRhodesPianoAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRhodesPianoAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRhodesPianoAudioUnit.h; sourceTree = "<group>"; };
-		CE7E6933569F6FEE79B8681668D2F6EB /* AudioKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AudioKit.h; sourceTree = "<group>"; };
-		CFC381432E9B4FD097AD9ABB52D45E53 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		D17A88C974ECAE3DAA0BADD007FC5D22 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = macOS/AudioKit.framework; sourceTree = "<group>"; };
-		D37ACABC629DE36B6152637150F45B21 /* AKTimeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTimeline.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTimeline.h; sourceTree = "<group>"; };
-		D5BF14DFCFD212CEC7551CCDDDD93E12 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		DA6B39983E6621D7434C3F3F97E0BFA8 /* AKOperationEffectAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationEffectAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOperationEffectAudioUnit.h; sourceTree = "<group>"; };
-		DABD47342FBF6A61050EC3E17CBEFA09 /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFloatConverter.h; sourceTree = "<group>"; };
-		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		DF4DBC036D331C5DF892A543FC7FB4BC /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudio.h; sourceTree = "<group>"; };
-		DFC063178CA60523058E9BC395E686C9 /* AKRenderTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRenderTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRenderTap.h; sourceTree = "<group>"; };
-		E1088A2A86DF7761314E775B69A1229B /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		E225A69DE77177B673D4200ADABC0345 /* AKPhaseLockedVocoderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseLockedVocoderAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPhaseLockedVocoderAudioUnit.h; sourceTree = "<group>"; };
-		E2A0F2ADFFE2E0DD4D5612F51795A048 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		E3DE9107E263E03B5347E58573F8B6DA /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		E4BF12359A0B0071CEC507FD83F967D7 /* AKAmplitudeTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeTrackerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAmplitudeTrackerAudioUnit.h; sourceTree = "<group>"; };
-		E9ED5ECB80E9E4A61194666AC1B96868 /* AKPresetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPresetManager.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPresetManager.h; sourceTree = "<group>"; };
-		EB5305EF16EEEAFD9876A56362E48384 /* AKModulatedDelay_Typedefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModulatedDelay_Typedefs.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKModulatedDelay_Typedefs.h; sourceTree = "<group>"; };
-		EC633B461EDA5DC8C2DDDFB080800AC1 /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioDisplayLink.h; sourceTree = "<group>"; };
-		ECBDBD1AD6A660DC5AC14514096DD7BF /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFloatData.h; sourceTree = "<group>"; };
-		ED6A2B78619C3A5A56E3FAD01E020782 /* AKSamplerMetronome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSamplerMetronome.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSamplerMetronome.h; sourceTree = "<group>"; };
-		EF535CE8D5E0921E47F79B492F545C8C /* AKMandolinAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMandolinAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMandolinAudioUnit.h; sourceTree = "<group>"; };
-		F2B1FA9D4C486A44AE6074C8142DE56D /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		F4F08FF857EE5CC3882F764ED148ED28 /* AudioKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKit-Swift.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/AudioKit-Swift.h"; sourceTree = "<group>"; };
-		F5675B216317FF05079D74E106607CFD /* AudioKitUI-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKitUI-Swift.h"; path = "macOS/AudioKitUI.framework/Versions/A/Headers/AudioKitUI-Swift.h"; sourceTree = "<group>"; };
-		F590642E36800815405CF0546F02182A /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		F78A502022710BD0D1535D19C879E79D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9040209D9FA5A5AFBB51EE669B3CF77 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		FCDDC3AAF02CC71048A874F012D4B81C /* AKLazyTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLazyTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKLazyTap.h; sourceTree = "<group>"; };
+		067EE29242A675F1B1FC404A19DD8593 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		07F8CF74C91181CF19A5C6EE7BBC3FDF /* AKFMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		11E303500B180036D772C703B595457D /* AKWaveTableAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKWaveTableAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKWaveTableAudioUnit.h; sourceTree = "<group>"; };
+		120D92D97096712C6CBC5723F597E342 /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFloatConverter.h; sourceTree = "<group>"; };
+		12BB18673ED372E3AE89AF169126F7FD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		12C7415C28E6FDDDCC92006EE08FFCD2 /* AudioKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKit-Swift.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/AudioKit-Swift.h"; sourceTree = "<group>"; };
+		134A3FB5DAA4DCD5E60108E36CE46ED2 /* AKCallbackInstrumentAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCallbackInstrumentAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKCallbackInstrumentAudioUnit.h; sourceTree = "<group>"; };
+		18621D230EC1ED63E741BA06C531B73C /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZOutput.h; sourceTree = "<group>"; };
+		18885999E69ACCE05BB2B78188C4119E /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		19B58CB0FD1E2A2C71A3386F93FA258C /* AudioKitUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKitUI.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/AudioKitUI.h; sourceTree = "<group>"; };
+		1E84EAEAC3CFDA5D8025F76BD438D9F2 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		1FEE2371C5698F11C89727D190AA0CA4 /* AKBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBankAudioUnit.h; sourceTree = "<group>"; };
+		201B02455E6A4C694E3FA95AF9509A6F /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioDevice.h; sourceTree = "<group>"; };
+		244F29B78B52CDD915C8DB69E5FE91DF /* Pods-KeyboardKeyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeyboardKeyboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		292B68B6F519B751D39A3644AD6BA099 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		2A838C788501A546165C6D98BEF1BB8A /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		2B8BB6E1A672442C4E133543746A2CC7 /* AKAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAudioUnit.h; sourceTree = "<group>"; };
+		2BA3FF1E30A2600FA91B8B5930B1AF43 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		2DAE2483AE0ECA0EBF01BB761037FF09 /* Pods-KeyboardKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeyboardKeyboard-dummy.m"; sourceTree = "<group>"; };
+		31638590E6082AA40885A4D3A1CEC8A4 /* Pods-KeyboardKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeyboardKeyboard-umbrella.h"; sourceTree = "<group>"; };
+		319D4C38C697367BB0B4C439BB1DEBE0 /* AudioEngineUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioEngineUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AudioEngineUnit.h; sourceTree = "<group>"; };
+		344EF511B0BB8739C2DF4F0CCBF98B8C /* AKTimeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTimeline.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTimeline.h; sourceTree = "<group>"; };
+		3585D4A01057AF41671518BB39B43549 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		38CAA9E1414FBCF73C55188AB645E402 /* AKModulatedDelay_Typedefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModulatedDelay_Typedefs.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKModulatedDelay_Typedefs.h; sourceTree = "<group>"; };
+		39B63BCFEBB433CCE932E7499CA6A91C /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		3B852F007C335CAA66BA51ABF34E2BDF /* AudioKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKitUI.framework; path = macOS/AudioKitUI.framework; sourceTree = "<group>"; };
+		44E6CD240B210A657300A2FFC2CB4F0D /* AKBalancerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBalancerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKBalancerAudioUnit.h; sourceTree = "<group>"; };
+		47D22B84C6D446AD44D3DEF410A3453A /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		481D50DD73257336AD2B8C84536F6269 /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioPlotGL.h; sourceTree = "<group>"; };
+		495170B8D44C773CA45555F33B0CA88B /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioPlot.h; sourceTree = "<group>"; };
+		4A12C12F42BEA9A9CC6E8012DA1A4788 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		4B9CA046F252B0C5D92B4DC7E5FD1D84 /* AKDynaRageCompressorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDynaRageCompressorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKDynaRageCompressorAudioUnit.h; sourceTree = "<group>"; };
+		4ED00BD736C09E4AA4A100A36F4DDDFA /* AKOperationGeneratorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationGeneratorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOperationGeneratorAudioUnit.h; sourceTree = "<group>"; };
+		50655B20AF286819318B78253866C7AC /* Pods-KeyboardKeyboard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeyboardKeyboard-frameworks.sh"; sourceTree = "<group>"; };
+		5194DC885EB312CB49050E46564B81DD /* AKOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		54562CD5E8C011F0AB093BFC19FEF4B2 /* Pods_KeyboardKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeyboardKeyboard.framework; path = "Pods-KeyboardKeyboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55484456784FCD2CD01E091D4ED936D9 /* BufferedAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BufferedAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/BufferedAudioUnit.h; sourceTree = "<group>"; };
+		57E6700DA8ABB829D4576ED9A73F010E /* AKFrequencyTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFrequencyTrackerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKFrequencyTrackerAudioUnit.h; sourceTree = "<group>"; };
+		5BBA4849C337AA92F180576CF4447D56 /* AKAmplitudeTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeTrackerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAmplitudeTrackerAudioUnit.h; sourceTree = "<group>"; };
+		5F9A09696EAE9262E6E3D0D318F10AD9 /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioPlayer.h; sourceTree = "<group>"; };
+		62CCDE5925D21011EE58750572317A89 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		63B8BCF1DE2045AFDE09A406D529EAD5 /* AKRhinoGuitarProcessorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRhinoGuitarProcessorAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRhinoGuitarProcessorAudioUnit.h; sourceTree = "<group>"; };
+		64CBC226D230D960AA5D91006CE4DD31 /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZPlot.h; sourceTree = "<group>"; };
+		655602B322A776DC38CE499599EEFA1B /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		659C57B1ECD6D15C5674F9FF09761B7F /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudio.h; sourceTree = "<group>"; };
+		669D44592A661012F9C3A46FAB391570 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		6A7FDB3D6A7567A94672B383F285E5BA /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		6FE562775F050F8AB3054B37617FCFD4 /* AudioKitUI-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKitUI-Swift.h"; path = "macOS/AudioKitUI.framework/Versions/A/Headers/AudioKitUI-Swift.h"; sourceTree = "<group>"; };
+		745C12F367F0CF8748DFD7551FFD7B30 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		74CB9CCC0AF709E6357A7A011DF61735 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		793D00FE86588566D829522DF0504A60 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		799400467DFEF0CF6E9D8EC12C99CB3F /* TPCircularBuffer+Unit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+Unit.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer+Unit.h"; sourceTree = "<group>"; };
+		79A08B36E772E30C56613AE97B412906 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		8232950B3F010A9E354AB132F6DF178D /* AKLazyTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLazyTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKLazyTap.h; sourceTree = "<group>"; };
+		86A700B305A7EB5B2631EF01F6BD7734 /* Pods-KeyboardKeyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeyboardKeyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C5794D6722A3ED10DB9CAB37B532794 /* EZAudioFileMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFileMarker.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFileMarker.h; sourceTree = "<group>"; };
+		8D235638767045D8844C7D64E88C2590 /* AKInterop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKInterop.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKInterop.h; sourceTree = "<group>"; };
+		8E5AA2A5B4E860D72E58AF173C7D09B9 /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer.h; sourceTree = "<group>"; };
+		90A11F4597A221E4126BD33E62DDF3DD /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		941130AD917F2D51CB03F15E478FEEE2 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		943438D55CAC1E5C4390E81D1F8DF4B0 /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = macOS/AudioKitUI.framework/Versions/A/Headers/EZAudioDisplayLink.h; sourceTree = "<group>"; };
+		957D36A3AB6B2D833AE64B00352A6118 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		95E6103904E5C7595EA7718ACE1FB5BC /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		95F22C9449CC6C8DB7D21F039CD71FC5 /* Pods-KeyboardKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyboardKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		97DB0A5E1539253C53E788A545FCEE65 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		97F363466FDFDA9AAD41747DCB0F688A /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		98DFDF869953A2A0315815E8EC11928B /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		99EE5DEF4F2B1A52465BBD3C2D34A2C3 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F18772BC07A1453A7403616D2C8EC06 /* AKDiskStreamerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDiskStreamerAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKDiskStreamerAudioUnit.h; sourceTree = "<group>"; };
+		A138289660C86D854192E3C559828F3B /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFloatData.h; sourceTree = "<group>"; };
+		A18EC36DCDCFAF803222E7B204C8A83F /* Pods-KeyboardKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeyboardKeyboard.modulemap"; sourceTree = "<group>"; };
+		A2EAEB56FA6EAB12CB3E8ED4F0E3B608 /* AKSamplerMetronome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSamplerMetronome.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSamplerMetronome.h; sourceTree = "<group>"; };
+		A33BE4FB10A6054DC977A35A392413D5 /* AudioKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AudioKit.h; sourceTree = "<group>"; };
+		A5E1D8CB8EA7DE40FF0AC5D6E9958D51 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		A5E50E87A2B4F58DAA90A8F5172A8059 /* AKMicrophoneTrackerEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMicrophoneTrackerEngine.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMicrophoneTrackerEngine.h; sourceTree = "<group>"; };
+		A6324ED06BCB082C832F732459E10751 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+AudioBufferList.h"; path = "macOS/AudioKit.framework/Versions/A/Headers/TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		A75C74DA378985CB596CD3F7299EAB14 /* AKPhaseDistortionOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		A79790203246160D51E4C1C9CD7B5F7C /* Pods-KeyboardKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyboardKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		AA2B318B5234D34375A8BC4C854D6463 /* AKSampler_Typedefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSampler_Typedefs.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSampler_Typedefs.h; sourceTree = "<group>"; };
+		AC46F17F0099CDCA78A99B98F83DD35A /* AKPWMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPWMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		AF442A79C5C4BED299EDC47743CA2896 /* AKGeneratorAudioUnitBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKGeneratorAudioUnitBase.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKGeneratorAudioUnitBase.h; sourceTree = "<group>"; };
+		B769A7174C0D58AF52ADB857FA812152 /* AudioKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AudioKit.xcconfig; sourceTree = "<group>"; };
+		B8AF2B15AAB676162B87526E0763F4B1 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		BCA6F349FCD06206C9C4A49966BD743F /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZMicrophone.h; sourceTree = "<group>"; };
+		BD9363C6C11CB19F5CDDB09CCC54532A /* Pods-KeyboardKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeyboardKeyboard-Info.plist"; sourceTree = "<group>"; };
+		C302968838B7EFE23F24415BCFAEC3DD /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		C61937BFB57EB3D9BB643DB2472726F7 /* soundpipe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = soundpipe.h; path = macOS/AudioKit.framework/Versions/A/Headers/soundpipe.h; sourceTree = "<group>"; };
+		C70BF84F526D172785E4F45F8004B4CD /* ExceptionCatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExceptionCatcher.h; path = macOS/AudioKit.framework/Versions/A/Headers/ExceptionCatcher.h; sourceTree = "<group>"; };
+		C76B82E50991B2AAD171090FCC820BF1 /* AKMorphingOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorBankAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMorphingOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		C899A5639C154518628CDB223BF43603 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		C91E4A542E5A1690C6111026D76D245D /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZRecorder.h; sourceTree = "<group>"; };
+		C94CF2A66A624E1A422E066AF233B635 /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFile.h; sourceTree = "<group>"; };
+		CE31F4E95D8A11C721E109C0A2105F52 /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioUtilities.h; sourceTree = "<group>"; };
+		CE47F465C5EDB0319F1E28089704B0D5 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		D031B66A09A87F8853314183E263B115 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		D115E95925CDAE018BFDF2B5D62051D5 /* dr_wav.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dr_wav.h; path = macOS/AudioKit.framework/Versions/A/Headers/dr_wav.h; sourceTree = "<group>"; };
+		D4E9E2E806A1DD76CE60A6094D14393A /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		D6CC1322BB16DF41C18744A4717681DE /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		D6E3E3185E8FDE7DA12A4C95BD64D4BC /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		DB6049911E2E5D660B3461A1FFD54E22 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		DBF3B6E5580829C35D58826B8DF21CF2 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		DD6CEFA20F453AB02E8DB9FE72125042 /* AKTesterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTesterAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTesterAudioUnit.h; sourceTree = "<group>"; };
+		DF59EC5F29F83D71C8B7DF603C90E175 /* AKSporthStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKSporthStack.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKSporthStack.h; sourceTree = "<group>"; };
+		E1D67ED68CF63C5692C065A890FD3A14 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		E21F175E47ECA590BA6FAF7D0F3EE517 /* AKOfflineRenderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOfflineRenderAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOfflineRenderAudioUnit.h; sourceTree = "<group>"; };
+		E3ED9CFF0A05043681F1636AE5E23015 /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = macOS/AudioKit.framework/Versions/A/Headers/EZAudioFFT.h; sourceTree = "<group>"; };
+		E9B7247847DFD6A569F0F6AEBE20A885 /* AKAudioUnitBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnitBase.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKAudioUnitBase.h; sourceTree = "<group>"; };
+		EDF4E97D3DE0BE087AE2F12D959A7551 /* vocwrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vocwrapper.h; path = macOS/AudioKit.framework/Versions/A/Headers/vocwrapper.h; sourceTree = "<group>"; };
+		EEBDE9B0F700F2E5C7CD4905E2532982 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		F0F6292F14599A1606D0EFDEDB2D18D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		F46572428C276D4F166E6A72B4F26FB9 /* AKPresetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPresetManager.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKPresetManager.h; sourceTree = "<group>"; };
+		F4792670288E3B8E021CE3CB20BF345E /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = macOS/AudioKit.framework; sourceTree = "<group>"; };
+		F710A5E17C75486B418BC4F847848E73 /* AKMandolinAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMandolinAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKMandolinAudioUnit.h; sourceTree = "<group>"; };
+		F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		FC62B4599AE037DD39149070A442540F /* AKRenderTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRenderTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKRenderTap.h; sourceTree = "<group>"; };
+		FED26EDB1FB88484264C2505A6E0EE8B /* AKOperationEffectAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationEffectAudioUnit.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKOperationEffectAudioUnit.h; sourceTree = "<group>"; };
+		FFE174E6A113A6EC1ADE499AA60B073B /* AKTimelineTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTimelineTap.h; path = macOS/AudioKit.framework/Versions/A/Headers/AKTimelineTap.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A8D92959F824E99B5BDF57B33826E03 /* Frameworks */ = {
+		F6AB1C5EE1B33BBC46A05D722DD06B9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8A1824EBC73EBF6E77695A27D7B1DF /* Cocoa.framework in Frameworks */,
+				2DDC064ED3692461DAE7CC37125B7AFB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF93DC71EF054239F3E93F525BC03FAB /* Frameworks */ = {
+		F990D1C257A24028B092E4B34539E9EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				918C72BB6A344927ABB6C2CB272E7D76 /* Cocoa.framework in Frameworks */,
+				61EF341CDCED77D79F6CF5030DBF7771 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BD0CABD158A6D7B11173C97BFD30E1E /* Frameworks */ = {
+		37269941380A31532654C6E6F2D47FD8 /* AudioKit */ = {
 			isa = PBXGroup;
 			children = (
-				4727A721CBA929BEC432D5DDC150EFB2 /* AudioKitUI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		26A60EC5A3514EEEB25B17B487FBEA79 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				E4BF12359A0B0071CEC507FD83F967D7 /* AKAmplitudeTrackerAudioUnit.h */,
-				93AA48920B33F0A1A3E0F3BE4C8C5A4C /* AKAudioUnit.h */,
-				8103DEA2854776641FF0EFADCB8FCDEF /* AKAudioUnitBase.h */,
-				32306E0122646E8A3CC845BBA69B6854 /* AKBalancerAudioUnit.h */,
-				B1AEA9D93EAA1087840DD1EA65BC356B /* AKBankAudioUnit.h */,
-				9F9502E1A10FB4BC22BC07E44D102049 /* AKConvolutionAudioUnit.h */,
-				931A93AA0DF26B9B2B466F7C02417200 /* AKDiskStreamerAudioUnit.h */,
-				930C90AF347618E14139E79D088422BD /* AKDynaRageCompressorAudioUnit.h */,
-				0277858A1583993861546C1BC38E2343 /* AKFMOscillatorBankAudioUnit.h */,
-				9732987ECBC7F4904D1CE7194FC87DD5 /* AKFrequencyTrackerAudioUnit.h */,
-				09D89D2A10F178882BA5DB3CCE8A461D /* AKGeneratorAudioUnitBase.h */,
-				CBEC1CDC0F61A4D8C2AAAD1CC0D61014 /* AKInterop.h */,
-				FCDDC3AAF02CC71048A874F012D4B81C /* AKLazyTap.h */,
-				EF535CE8D5E0921E47F79B492F545C8C /* AKMandolinAudioUnit.h */,
-				1DC1C52980CF51C0654543F947623DD0 /* AKMicrophoneTrackerEngine.h */,
-				EB5305EF16EEEAFD9876A56362E48384 /* AKModulatedDelay_Typedefs.h */,
-				BBCF86BAF730BA840691AF59457AC520 /* AKMorphingOscillatorBankAudioUnit.h */,
-				A88D97DB2E1E9C5F156C7996AB282ADC /* AKOfflineRenderAudioUnit.h */,
-				DA6B39983E6621D7434C3F3F97E0BFA8 /* AKOperationEffectAudioUnit.h */,
-				05CCBC0515A18B5E286D398115B727F8 /* AKOperationGeneratorAudioUnit.h */,
-				090714639DD6CC975CA02748BBEE1664 /* AKOscillatorBankAudioUnit.h */,
-				5C2512E80352998ABE28FDBDD63DD582 /* AKPhaseDistortionOscillatorBankAudioUnit.h */,
-				E225A69DE77177B673D4200ADABC0345 /* AKPhaseLockedVocoderAudioUnit.h */,
-				E9ED5ECB80E9E4A61194666AC1B96868 /* AKPresetManager.h */,
-				93E9F096554CF0D3A66F62F197B93E02 /* AKPWMOscillatorBankAudioUnit.h */,
-				DFC063178CA60523058E9BC395E686C9 /* AKRenderTap.h */,
-				5C1D970ED0E3DAA93F6543FE3B6C6AF0 /* AKRhinoGuitarProcessorAudioUnit.h */,
-				CC13D2A2C50E40F9C6CF0E275D033C35 /* AKRhodesPianoAudioUnit.h */,
-				63910B8EF219E7242E24DDF4F54C1AC1 /* AKSamplePlayerAudioUnit.h */,
-				9C38724DBDA6B91CE76D1FA0E43375F2 /* AKSampler_Typedefs.h */,
-				ED6A2B78619C3A5A56E3FAD01E020782 /* AKSamplerMetronome.h */,
-				4A18EC5473620D3BC214F2F22A678E6E /* AKShakerAudioUnit.h */,
-				7C283036404EFD101C91EAAE8102A654 /* AKSporthStack.h */,
-				4AB59DD13F66ABFB35E471AC784D99E4 /* AKTesterAudioUnit.h */,
-				D37ACABC629DE36B6152637150F45B21 /* AKTimeline.h */,
-				25C74483AAD6C9AC103A346127869B92 /* AKTimelineTap.h */,
-				377B182E0128EEE80BA602A36E89F7E0 /* AKTubularBellsAudioUnit.h */,
-				6823246A917052877C8D374B57D7C9CE /* AKWaveTableAudioUnit.h */,
-				CE7E6933569F6FEE79B8681668D2F6EB /* AudioKit.h */,
-				F4F08FF857EE5CC3882F764ED148ED28 /* AudioKit-Swift.h */,
-				2CB366637F4972CE702CEC2028338745 /* dr_wav.h */,
-				1B21028829C499CC324A51CB1F66C671 /* ExceptionCatcher.h */,
-				DF4DBC036D331C5DF892A543FC7FB4BC /* EZAudio.h */,
-				232BBBA905048C0AC38B1CF35B8B376D /* EZAudioDevice.h */,
-				B54C7466012974B2D96DB2703E1B7F29 /* EZAudioFFT.h */,
-				41BD538542A7D4D74254C46C309F740A /* EZAudioFile.h */,
-				AD10A3403751AA0D42BD93CFBD491D52 /* EZAudioFileMarker.h */,
-				DABD47342FBF6A61050EC3E17CBEFA09 /* EZAudioFloatConverter.h */,
-				ECBDBD1AD6A660DC5AC14514096DD7BF /* EZAudioFloatData.h */,
-				BE88353A29D66B44BAACC938AA9615E3 /* EZAudioPlayer.h */,
-				4EB4F0859D7F62F6783584E82E8A97BF /* EZAudioUtilities.h */,
-				A26C579512CCAB0EC24A48AF8C5E4636 /* EZMicrophone.h */,
-				21B31D375A7E14C56A7BEF2291856D01 /* EZOutput.h */,
-				1EE34F23A6AF7BABF043867913D5F564 /* EZRecorder.h */,
-				8A233922CD52E930AE1880982C464992 /* soundpipe.h */,
-				6CE6CE962C63BEAF306BEDC4E7BDB159 /* TPCircularBuffer.h */,
-				14ECD386296B6786268FE1F978F4A4D1 /* TPCircularBuffer+AudioBufferList.h */,
-				B7492DE20CD446F71E3FCB5A0E50239F /* TPCircularBuffer+Unit.h */,
-				758BE3776BADB4AEA8863A253369B216 /* vocwrapper.h */,
-				4AB752C61F3D75F349CD4CB73D97C927 /* Frameworks */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA7AC8429882A95AA0810A9DCDED54FF /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4AB752C61F3D75F349CD4CB73D97C927 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D17A88C974ECAE3DAA0BADD007FC5D22 /* AudioKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		644FD598C44D192756798A27E612E0F6 /* Pods-KeyboardKeyboard */ = {
-			isa = PBXGroup;
-			children = (
-				F78A502022710BD0D1535D19C879E79D /* Info.plist */,
-				3AC65AD1FC6675EE8FF2716EDEC0E475 /* Pods-KeyboardKeyboard.modulemap */,
-				A310C400243315A8F2DCA8F36FF4B589 /* Pods-KeyboardKeyboard-acknowledgements.markdown */,
-				CBFBABD3C961A3C439AC916337E5E1C6 /* Pods-KeyboardKeyboard-acknowledgements.plist */,
-				1A797A56A3D33863AC352ACAC97FE39B /* Pods-KeyboardKeyboard-dummy.m */,
-				CA9A1660759261AC45FA82C5D08CF1ED /* Pods-KeyboardKeyboard-frameworks.sh */,
-				4D6400BD4A570E5BE4987B858D6B2AC7 /* Pods-KeyboardKeyboard-resources.sh */,
-				58280967F9598BDCD175CDFD8BCEE9E3 /* Pods-KeyboardKeyboard-umbrella.h */,
-				5332784236B33A877067668180599B27 /* Pods-KeyboardKeyboard.debug.xcconfig */,
-				C2C79DBAEF0CE7A3C2F0699D828E6974 /* Pods-KeyboardKeyboard.release.xcconfig */,
-			);
-			name = "Pods-KeyboardKeyboard";
-			path = "Target Support Files/Pods-KeyboardKeyboard";
-			sourceTree = "<group>";
-		};
-		754891761803A7B8657B482B451F4D81 /* AudioKit */ = {
-			isa = PBXGroup;
-			children = (
-				26A60EC5A3514EEEB25B17B487FBEA79 /* Core */,
-				946F0D236E0B7B7723251F9D349A599D /* UI */,
+				F0AADE75F77F3CF1316E49C4077EB769 /* Core */,
+				62D6297DC88D41592956B21B38B23815 /* Support Files */,
+				983DB9C9CBEA7DB9AE419AE1E3A4C800 /* UI */,
 			);
 			name = AudioKit;
 			path = AudioKit;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		617C85B090FEA24B67C7451950DED412 /* SnapKit */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				B7B2DAFBF493747C419125A1483FAC2C /* Pods */,
-				D29224EC180F32FD4FFE7E9E1442D43E /* Products */,
-				D9D2DEE24AD8321321A573C0ED8E92F3 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		946F0D236E0B7B7723251F9D349A599D /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				C7AF9BAABF247460978611B80FC16CD4 /* AudioKitUI.h */,
-				F5675B216317FF05079D74E106607CFD /* AudioKitUI-Swift.h */,
-				EC633B461EDA5DC8C2DDDFB080800AC1 /* EZAudioDisplayLink.h */,
-				665AAAAAEA1678290AF9AB7279A3C178 /* EZAudioPlot.h */,
-				A62AF3739F4B19F671B285AAB7CA670B /* EZAudioPlotGL.h */,
-				89B0096122BEFB9473CCC2ADB87CB74A /* EZPlot.h */,
-				0BD0CABD158A6D7B11173C97BFD30E1E /* Frameworks */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		9A1C5822C3395FB0CBF1DAFBD7384176 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A03349E99FF258D5E8032B4E992ED197 /* Info.plist */,
-				69F278492EC7C63CAD006AF08E4D6CE0 /* SnapKit.modulemap */,
-				13ACEEF146E8B616FE94D26A2813EC55 /* SnapKit.xcconfig */,
-				E2A0F2ADFFE2E0DD4D5612F51795A048 /* SnapKit-dummy.m */,
-				692D45B56CBC7DEA7E0ABC242CE69793 /* SnapKit-prefix.pch */,
-				F9040209D9FA5A5AFBB51EE669B3CF77 /* SnapKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SnapKit";
-			sourceTree = "<group>";
-		};
-		A25604DB9220EC4D4E5BB3A6B02E94FB /* SnapKit */ = {
-			isa = PBXGroup;
-			children = (
-				158CEA829686AD0A879DDC11E8D0FFB1 /* Constraint.swift */,
-				12A2FFD96313FFED6B116D6E9C928401 /* ConstraintAttributes.swift */,
-				1C80D5D40F2B9695F80A819EA1E7858B /* ConstraintConfig.swift */,
-				2729D673310CB954129F259226C00699 /* ConstraintConstantTarget.swift */,
-				04475B74C3125BE42E9AD3C144B3A448 /* ConstraintDescription.swift */,
-				AABB80AD7849CDDBDB40315FE1898B0B /* ConstraintDSL.swift */,
-				BADE57E6164E2553EA6C9478529C9783 /* ConstraintInsets.swift */,
-				9604315D41E83F6DA614F88F681EA463 /* ConstraintInsetTarget.swift */,
-				E1088A2A86DF7761314E775B69A1229B /* ConstraintItem.swift */,
-				ABDEB2F5C7A17858527B20F306D48FEB /* ConstraintLayoutGuide.swift */,
-				430F5497E5CE9E17ED4A70D1A3FCA025 /* ConstraintLayoutGuide+Extensions.swift */,
-				F590642E36800815405CF0546F02182A /* ConstraintLayoutGuideDSL.swift */,
-				7CDEAE037190BB93C19C1C6A345562AF /* ConstraintLayoutSupport.swift */,
-				6EC37F7CE2CEAC791CAE2A892D9070BC /* ConstraintLayoutSupportDSL.swift */,
-				09090075EC98A061AE6D29E11934615E /* ConstraintMaker.swift */,
-				363DC46864DF0DA2D15E5A5B44E25B51 /* ConstraintMakerEditable.swift */,
-				D5BF14DFCFD212CEC7551CCDDDD93E12 /* ConstraintMakerExtendable.swift */,
-				98B811CAB695CB8F22230476252E0452 /* ConstraintMakerFinalizable.swift */,
-				068386A705C38EDD35DE9A9DA1A3A66D /* ConstraintMakerPriortizable.swift */,
-				6960D821D4FD74F2989DC3B0931B306E /* ConstraintMakerRelatable.swift */,
-				AC2FE8C507A6DD50FC6BC5A2BBBBB3F1 /* ConstraintMultiplierTarget.swift */,
-				E3DE9107E263E03B5347E58573F8B6DA /* ConstraintOffsetTarget.swift */,
-				669B7D6E5FB1D885D806B660EF4ACE26 /* ConstraintPriority.swift */,
-				CA8EACD1183D69A55CEB2EB3D4DCAEBA /* ConstraintPriorityTarget.swift */,
-				34E51BDE18AC8B325594F504E3DACB4F /* ConstraintRelatableTarget.swift */,
-				5E1FA355E935730A7B48CC82B9663D26 /* ConstraintRelation.swift */,
-				3ECEEC8C3701FF017FB3C6F96967A227 /* ConstraintView.swift */,
-				F2B1FA9D4C486A44AE6074C8142DE56D /* ConstraintView+Extensions.swift */,
-				C21501C973856CF45EA26D074330A426 /* ConstraintViewDSL.swift */,
-				7F131EA932E56F3EE272642D83C22C76 /* Debugging.swift */,
-				CFC381432E9B4FD097AD9ABB52D45E53 /* LayoutConstraint.swift */,
-				4E07CB2591A718F908958FDCEE27592B /* LayoutConstraintItem.swift */,
-				8FE0943AE2EE4168AD21897691D18925 /* Typealiases.swift */,
-				618EB7F092744BB647452DC81F7C8CB6 /* UILayoutSupport+Extensions.swift */,
-				9A1C5822C3395FB0CBF1DAFBD7384176 /* Support Files */,
+				957D36A3AB6B2D833AE64B00352A6118 /* Constraint.swift */,
+				97DB0A5E1539253C53E788A545FCEE65 /* ConstraintAttributes.swift */,
+				62CCDE5925D21011EE58750572317A89 /* ConstraintConfig.swift */,
+				3585D4A01057AF41671518BB39B43549 /* ConstraintConstantTarget.swift */,
+				2BA3FF1E30A2600FA91B8B5930B1AF43 /* ConstraintDescription.swift */,
+				745C12F367F0CF8748DFD7551FFD7B30 /* ConstraintDSL.swift */,
+				18885999E69ACCE05BB2B78188C4119E /* ConstraintInsets.swift */,
+				C899A5639C154518628CDB223BF43603 /* ConstraintInsetTarget.swift */,
+				12BB18673ED372E3AE89AF169126F7FD /* ConstraintItem.swift */,
+				D031B66A09A87F8853314183E263B115 /* ConstraintLayoutGuide.swift */,
+				DB6049911E2E5D660B3461A1FFD54E22 /* ConstraintLayoutGuide+Extensions.swift */,
+				067EE29242A675F1B1FC404A19DD8593 /* ConstraintLayoutGuideDSL.swift */,
+				C302968838B7EFE23F24415BCFAEC3DD /* ConstraintLayoutSupport.swift */,
+				A5E1D8CB8EA7DE40FF0AC5D6E9958D51 /* ConstraintLayoutSupportDSL.swift */,
+				793D00FE86588566D829522DF0504A60 /* ConstraintMaker.swift */,
+				D4E9E2E806A1DD76CE60A6094D14393A /* ConstraintMakerEditable.swift */,
+				E1D67ED68CF63C5692C065A890FD3A14 /* ConstraintMakerExtendable.swift */,
+				97F363466FDFDA9AAD41747DCB0F688A /* ConstraintMakerFinalizable.swift */,
+				1E84EAEAC3CFDA5D8025F76BD438D9F2 /* ConstraintMakerPriortizable.swift */,
+				DBF3B6E5580829C35D58826B8DF21CF2 /* ConstraintMakerRelatable.swift */,
+				95E6103904E5C7595EA7718ACE1FB5BC /* ConstraintMultiplierTarget.swift */,
+				941130AD917F2D51CB03F15E478FEEE2 /* ConstraintOffsetTarget.swift */,
+				292B68B6F519B751D39A3644AD6BA099 /* ConstraintPriority.swift */,
+				D6E3E3185E8FDE7DA12A4C95BD64D4BC /* ConstraintPriorityTarget.swift */,
+				2A838C788501A546165C6D98BEF1BB8A /* ConstraintRelatableTarget.swift */,
+				47D22B84C6D446AD44D3DEF410A3453A /* ConstraintRelation.swift */,
+				39B63BCFEBB433CCE932E7499CA6A91C /* ConstraintView.swift */,
+				98DFDF869953A2A0315815E8EC11928B /* ConstraintView+Extensions.swift */,
+				79A08B36E772E30C56613AE97B412906 /* ConstraintViewDSL.swift */,
+				4A12C12F42BEA9A9CC6E8012DA1A4788 /* Debugging.swift */,
+				B8AF2B15AAB676162B87526E0763F4B1 /* LayoutConstraint.swift */,
+				CE47F465C5EDB0319F1E28089704B0D5 /* LayoutConstraintItem.swift */,
+				EEBDE9B0F700F2E5C7CD4905E2532982 /* Typealiases.swift */,
+				F0F6292F14599A1606D0EFDEDB2D18D7 /* UILayoutSupport+Extensions.swift */,
+				C58D35A46DD92801D1AC31A36EF09758 /* Support Files */,
 			);
 			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		B7B2DAFBF493747C419125A1483FAC2C /* Pods */ = {
+		62D6297DC88D41592956B21B38B23815 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				754891761803A7B8657B482B451F4D81 /* AudioKit */,
-				A25604DB9220EC4D4E5BB3A6B02E94FB /* SnapKit */,
+				B769A7174C0D58AF52ADB857FA812152 /* AudioKit.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AudioKit";
+			sourceTree = "<group>";
+		};
+		6E7222524C8CAED6C68B67BA685DB318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4792670288E3B8E021CE3CB20BF345E /* AudioKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A0758D97ABE49BC57B68B3CE6108BE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37269941380A31532654C6E6F2D47FD8 /* AudioKit */,
+				617C85B090FEA24B67C7451950DED412 /* SnapKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D29224EC180F32FD4FFE7E9E1442D43E /* Products */ = {
+		7E26EE1DF1A6DF267C0D61E3243EC67D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				63607D7EFEAAD7D401511661A21D006E /* Pods_KeyboardKeyboard.framework */,
-				3B3BA360986FF20C28BF50EC8DB29900 /* SnapKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D9D2DEE24AD8321321A573C0ED8E92F3 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				644FD598C44D192756798A27E612E0F6 /* Pods-KeyboardKeyboard */,
+				968B2A403CC7914C8845009C38E10B8F /* Pods-KeyboardKeyboard */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
+		968B2A403CC7914C8845009C38E10B8F /* Pods-KeyboardKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */,
+				A18EC36DCDCFAF803222E7B204C8A83F /* Pods-KeyboardKeyboard.modulemap */,
+				86A700B305A7EB5B2631EF01F6BD7734 /* Pods-KeyboardKeyboard-acknowledgements.markdown */,
+				244F29B78B52CDD915C8DB69E5FE91DF /* Pods-KeyboardKeyboard-acknowledgements.plist */,
+				2DAE2483AE0ECA0EBF01BB761037FF09 /* Pods-KeyboardKeyboard-dummy.m */,
+				50655B20AF286819318B78253866C7AC /* Pods-KeyboardKeyboard-frameworks.sh */,
+				BD9363C6C11CB19F5CDDB09CCC54532A /* Pods-KeyboardKeyboard-Info.plist */,
+				31638590E6082AA40885A4D3A1CEC8A4 /* Pods-KeyboardKeyboard-umbrella.h */,
+				95F22C9449CC6C8DB7D21F039CD71FC5 /* Pods-KeyboardKeyboard.debug.xcconfig */,
+				A79790203246160D51E4C1C9CD7B5F7C /* Pods-KeyboardKeyboard.release.xcconfig */,
+			);
+			name = "Pods-KeyboardKeyboard";
+			path = "Target Support Files/Pods-KeyboardKeyboard";
+			sourceTree = "<group>";
+		};
+		983DB9C9CBEA7DB9AE419AE1E3A4C800 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				19B58CB0FD1E2A2C71A3386F93FA258C /* AudioKitUI.h */,
+				6FE562775F050F8AB3054B37617FCFD4 /* AudioKitUI-Swift.h */,
+				943438D55CAC1E5C4390E81D1F8DF4B0 /* EZAudioDisplayLink.h */,
+				495170B8D44C773CA45555F33B0CA88B /* EZAudioPlot.h */,
+				481D50DD73257336AD2B8C84536F6269 /* EZAudioPlotGL.h */,
+				64CBC226D230D960AA5D91006CE4DD31 /* EZPlot.h */,
+				C330096C5A09808EC49FE0ED11F8893A /* Frameworks */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C330096C5A09808EC49FE0ED11F8893A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B852F007C335CAA66BA51ABF34E2BDF /* AudioKitUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C58D35A46DD92801D1AC31A36EF09758 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC1322BB16DF41C18744A4717681DE /* SnapKit.modulemap */,
+				6A7FDB3D6A7567A94672B383F285E5BA /* SnapKit.xcconfig */,
+				99EE5DEF4F2B1A52465BBD3C2D34A2C3 /* SnapKit-dummy.m */,
+				74CB9CCC0AF709E6357A7A011DF61735 /* SnapKit-Info.plist */,
+				655602B322A776DC38CE499599EEFA1B /* SnapKit-prefix.pch */,
+				669D44592A661012F9C3A46FAB391570 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		CBD43E0947D94E318A0ED1350CFF29ED /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */,
 			);
 			name = "OS X";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
+				7A0758D97ABE49BC57B68B3CE6108BE4 /* Pods */,
+				EF0FFA58C903A8268FC6FE61979892F3 /* Products */,
+				7E26EE1DF1A6DF267C0D61E3243EC67D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD43E0947D94E318A0ED1350CFF29ED /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF0FFA58C903A8268FC6FE61979892F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54562CD5E8C011F0AB093BFC19FEF4B2 /* Pods_KeyboardKeyboard.framework */,
+				90A11F4597A221E4126BD33E62DDF3DD /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0AADE75F77F3CF1316E49C4077EB769 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5BBA4849C337AA92F180576CF4447D56 /* AKAmplitudeTrackerAudioUnit.h */,
+				2B8BB6E1A672442C4E133543746A2CC7 /* AKAudioUnit.h */,
+				E9B7247847DFD6A569F0F6AEBE20A885 /* AKAudioUnitBase.h */,
+				44E6CD240B210A657300A2FFC2CB4F0D /* AKBalancerAudioUnit.h */,
+				1FEE2371C5698F11C89727D190AA0CA4 /* AKBankAudioUnit.h */,
+				134A3FB5DAA4DCD5E60108E36CE46ED2 /* AKCallbackInstrumentAudioUnit.h */,
+				9F18772BC07A1453A7403616D2C8EC06 /* AKDiskStreamerAudioUnit.h */,
+				4B9CA046F252B0C5D92B4DC7E5FD1D84 /* AKDynaRageCompressorAudioUnit.h */,
+				07F8CF74C91181CF19A5C6EE7BBC3FDF /* AKFMOscillatorBankAudioUnit.h */,
+				57E6700DA8ABB829D4576ED9A73F010E /* AKFrequencyTrackerAudioUnit.h */,
+				AF442A79C5C4BED299EDC47743CA2896 /* AKGeneratorAudioUnitBase.h */,
+				8D235638767045D8844C7D64E88C2590 /* AKInterop.h */,
+				8232950B3F010A9E354AB132F6DF178D /* AKLazyTap.h */,
+				F710A5E17C75486B418BC4F847848E73 /* AKMandolinAudioUnit.h */,
+				A5E50E87A2B4F58DAA90A8F5172A8059 /* AKMicrophoneTrackerEngine.h */,
+				38CAA9E1414FBCF73C55188AB645E402 /* AKModulatedDelay_Typedefs.h */,
+				C76B82E50991B2AAD171090FCC820BF1 /* AKMorphingOscillatorBankAudioUnit.h */,
+				E21F175E47ECA590BA6FAF7D0F3EE517 /* AKOfflineRenderAudioUnit.h */,
+				FED26EDB1FB88484264C2505A6E0EE8B /* AKOperationEffectAudioUnit.h */,
+				4ED00BD736C09E4AA4A100A36F4DDDFA /* AKOperationGeneratorAudioUnit.h */,
+				5194DC885EB312CB49050E46564B81DD /* AKOscillatorBankAudioUnit.h */,
+				A75C74DA378985CB596CD3F7299EAB14 /* AKPhaseDistortionOscillatorBankAudioUnit.h */,
+				F46572428C276D4F166E6A72B4F26FB9 /* AKPresetManager.h */,
+				AC46F17F0099CDCA78A99B98F83DD35A /* AKPWMOscillatorBankAudioUnit.h */,
+				FC62B4599AE037DD39149070A442540F /* AKRenderTap.h */,
+				63B8BCF1DE2045AFDE09A406D529EAD5 /* AKRhinoGuitarProcessorAudioUnit.h */,
+				AA2B318B5234D34375A8BC4C854D6463 /* AKSampler_Typedefs.h */,
+				A2EAEB56FA6EAB12CB3E8ED4F0E3B608 /* AKSamplerMetronome.h */,
+				DF59EC5F29F83D71C8B7DF603C90E175 /* AKSporthStack.h */,
+				DD6CEFA20F453AB02E8DB9FE72125042 /* AKTesterAudioUnit.h */,
+				344EF511B0BB8739C2DF4F0CCBF98B8C /* AKTimeline.h */,
+				FFE174E6A113A6EC1ADE499AA60B073B /* AKTimelineTap.h */,
+				11E303500B180036D772C703B595457D /* AKWaveTableAudioUnit.h */,
+				319D4C38C697367BB0B4C439BB1DEBE0 /* AudioEngineUnit.h */,
+				A33BE4FB10A6054DC977A35A392413D5 /* AudioKit.h */,
+				12C7415C28E6FDDDCC92006EE08FFCD2 /* AudioKit-Swift.h */,
+				55484456784FCD2CD01E091D4ED936D9 /* BufferedAudioUnit.h */,
+				D115E95925CDAE018BFDF2B5D62051D5 /* dr_wav.h */,
+				C70BF84F526D172785E4F45F8004B4CD /* ExceptionCatcher.h */,
+				659C57B1ECD6D15C5674F9FF09761B7F /* EZAudio.h */,
+				201B02455E6A4C694E3FA95AF9509A6F /* EZAudioDevice.h */,
+				E3ED9CFF0A05043681F1636AE5E23015 /* EZAudioFFT.h */,
+				C94CF2A66A624E1A422E066AF233B635 /* EZAudioFile.h */,
+				8C5794D6722A3ED10DB9CAB37B532794 /* EZAudioFileMarker.h */,
+				120D92D97096712C6CBC5723F597E342 /* EZAudioFloatConverter.h */,
+				A138289660C86D854192E3C559828F3B /* EZAudioFloatData.h */,
+				5F9A09696EAE9262E6E3D0D318F10AD9 /* EZAudioPlayer.h */,
+				CE31F4E95D8A11C721E109C0A2105F52 /* EZAudioUtilities.h */,
+				BCA6F349FCD06206C9C4A49966BD743F /* EZMicrophone.h */,
+				18621D230EC1ED63E741BA06C531B73C /* EZOutput.h */,
+				C91E4A542E5A1690C6111026D76D245D /* EZRecorder.h */,
+				C61937BFB57EB3D9BB643DB2472726F7 /* soundpipe.h */,
+				8E5AA2A5B4E860D72E58AF173C7D09B9 /* TPCircularBuffer.h */,
+				A6324ED06BCB082C832F732459E10751 /* TPCircularBuffer+AudioBufferList.h */,
+				799400467DFEF0CF6E9D8EC12C99CB3F /* TPCircularBuffer+Unit.h */,
+				EDF4E97D3DE0BE087AE2F12D959A7551 /* vocwrapper.h */,
+				6E7222524C8CAED6C68B67BA685DB318 /* Frameworks */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3E5629F904D523319748950D10855EF1 /* Headers */ = {
+		87314806D9DEB5000E4C19B8B7DC3E2B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E13B3B94B690681C7C6D6C4F1AF8F2A3 /* SnapKit-umbrella.h in Headers */,
+				8326B9CC5EE581AEF855EDAE5755375E /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D279E7912B98314F6FF350FAEC9ED5B8 /* Headers */ = {
+		F398B04E86BAE30FD46ED4FFA7613757 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCEE55079E1BF72D620F3469A3D3881 /* Pods-KeyboardKeyboard-umbrella.h in Headers */,
+				204AF8EF8B710637D62B9685CA809158 /* Pods-KeyboardKeyboard-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		59E802576401670094BBD0A6082EA093 /* SnapKit */ = {
+		366B76CD3FC3CCBB6F0441980BC8EA4C /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11AEEA4D390544D80793E82F5D2FDAA1 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildConfigurationList = D66028A6576FBBF070A78DDBBF27B7D2 /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				DFCAF130FFEE917537419C4117C6ACF1 /* Sources */,
-				5A8D92959F824E99B5BDF57B33826E03 /* Frameworks */,
-				3E5629F904D523319748950D10855EF1 /* Headers */,
+				87314806D9DEB5000E4C19B8B7DC3E2B /* Headers */,
+				67A6039895B71D1B85B48652494618C9 /* Sources */,
+				F6AB1C5EE1B33BBC46A05D722DD06B9B /* Frameworks */,
+				21DD1AC88EEF1837ED2454049F367891 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -474,121 +497,148 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 3B3BA360986FF20C28BF50EC8DB29900 /* SnapKit.framework */;
+			productReference = 90A11F4597A221E4126BD33E62DDF3DD /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DA9EBA66C977348D3394E46BBBA20C31 /* Pods-KeyboardKeyboard */ = {
+		4DBE7DF117F722D6E208A2388CF19105 /* Pods-KeyboardKeyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F6D17B92B8B41E434A123024E3FB6CE /* Build configuration list for PBXNativeTarget "Pods-KeyboardKeyboard" */;
+			buildConfigurationList = E3A2D37806E65D00F35E483C08D0B2ED /* Build configuration list for PBXNativeTarget "Pods-KeyboardKeyboard" */;
 			buildPhases = (
-				03427019332B48F1B771926C65672B7D /* Sources */,
-				BF93DC71EF054239F3E93F525BC03FAB /* Frameworks */,
-				D279E7912B98314F6FF350FAEC9ED5B8 /* Headers */,
+				F398B04E86BAE30FD46ED4FFA7613757 /* Headers */,
+				F5C9B206FDE45EC8786DC53CBEDB255F /* Sources */,
+				F990D1C257A24028B092E4B34539E9EA /* Frameworks */,
+				0A1983DCFD34EF1D8DEDDAB2539D3077 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D58968AEF1AE61C0190E0472466CCEA1 /* PBXTargetDependency */,
+				5FFBD0275F00CE30E26FFF95CB15BC22 /* PBXTargetDependency */,
+				AF9CDDB412B72FEB98982E80DFE18FA7 /* PBXTargetDependency */,
 			);
 			name = "Pods-KeyboardKeyboard";
 			productName = "Pods-KeyboardKeyboard";
-			productReference = 63607D7EFEAAD7D401511661A21D006E /* Pods_KeyboardKeyboard.framework */;
+			productReference = 54562CD5E8C011F0AB093BFC19FEF4B2 /* Pods_KeyboardKeyboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D29224EC180F32FD4FFE7E9E1442D43E /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EF0FFA58C903A8268FC6FE61979892F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA9EBA66C977348D3394E46BBBA20C31 /* Pods-KeyboardKeyboard */,
-				59E802576401670094BBD0A6082EA093 /* SnapKit */,
+				4903D068F92AE50341BC42AC6BB29FC8 /* AudioKit */,
+				4DBE7DF117F722D6E208A2388CF19105 /* Pods-KeyboardKeyboard */,
+				366B76CD3FC3CCBB6F0441980BC8EA4C /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		03427019332B48F1B771926C65672B7D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		0A1983DCFD34EF1D8DEDDAB2539D3077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44E6CBE96E32662C7D83E6A535859F02 /* Pods-KeyboardKeyboard-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFCAF130FFEE917537419C4117C6ACF1 /* Sources */ = {
+		21DD1AC88EEF1837ED2454049F367891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67A6039895B71D1B85B48652494618C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				073D060F96F7F79488348BA97F544E23 /* Constraint.swift in Sources */,
-				FDEB7E638E6236A26696526543F41107 /* ConstraintAttributes.swift in Sources */,
-				6ECF3AEB3B1C9FF3CE7F951735010E52 /* ConstraintConfig.swift in Sources */,
-				33421A2C6CAF938EB2A97647002F8284 /* ConstraintConstantTarget.swift in Sources */,
-				73725BD4C4E77BD88E275F43ECFA622F /* ConstraintDescription.swift in Sources */,
-				FEE99E58DD5B228B86243DDDA679F945 /* ConstraintDSL.swift in Sources */,
-				ADE7AF5BB473075DFD1F6F1213964734 /* ConstraintInsets.swift in Sources */,
-				6CBC15D9C16DFA6BBAF83D08FFE6F9CA /* ConstraintInsetTarget.swift in Sources */,
-				9EF267854336726947C3069B0B58E377 /* ConstraintItem.swift in Sources */,
-				F26C54BA623977AC3825063B66D4A7C9 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
-				4D382280E75773F2F4B029CC7AEC237B /* ConstraintLayoutGuide.swift in Sources */,
-				A36D3EC06458D7CC51B18504636A0581 /* ConstraintLayoutGuideDSL.swift in Sources */,
-				2FCD5D0F34311B81455BFD1814AE76BB /* ConstraintLayoutSupport.swift in Sources */,
-				8F12B93DB0E18F9B4B4D5F6BD4DF9C68 /* ConstraintLayoutSupportDSL.swift in Sources */,
-				6D9F71A20EC8C57FA74B6D58ECE4736E /* ConstraintMaker.swift in Sources */,
-				E460C529001221BC9FB100B7A029EA3D /* ConstraintMakerEditable.swift in Sources */,
-				7111E688202380FEFAE42ACC81DE23A2 /* ConstraintMakerExtendable.swift in Sources */,
-				AEC7CE42EAEB0EC2A9403146C3E73966 /* ConstraintMakerFinalizable.swift in Sources */,
-				7A3FE147F233DEBCC37A152DCC43777F /* ConstraintMakerPriortizable.swift in Sources */,
-				DCA7B1840CC3D9B71D54486F4FA4C04F /* ConstraintMakerRelatable.swift in Sources */,
-				8E0DB0B7DBD129A4ABFAB0E0A66549B5 /* ConstraintMultiplierTarget.swift in Sources */,
-				52619DA7A0254B774CBD3B5EB2E71EA7 /* ConstraintOffsetTarget.swift in Sources */,
-				DE8E72F5809E39F0CC6306581D5988C8 /* ConstraintPriority.swift in Sources */,
-				694BEF8B6CCAD50182EB4885D3631D69 /* ConstraintPriorityTarget.swift in Sources */,
-				CFEAABD2DC3C8DE3E390C394E732643E /* ConstraintRelatableTarget.swift in Sources */,
-				11CA79A6A2A56C33A15EA0BDED9303C2 /* ConstraintRelation.swift in Sources */,
-				76329CC8ECE7113430A30C59FBF3534C /* ConstraintView+Extensions.swift in Sources */,
-				923EE6C3576A521BF3D9F24B0A23A97A /* ConstraintView.swift in Sources */,
-				572F17532C7C6C0EB72D249AA2D0DA39 /* ConstraintViewDSL.swift in Sources */,
-				7D3881302170EFB20F326F30E4372DD8 /* Debugging.swift in Sources */,
-				9560CA875382D80245E3DFD2BBE7BF19 /* LayoutConstraint.swift in Sources */,
-				6BAB0D61B063CD3BB387148A9A4E9018 /* LayoutConstraintItem.swift in Sources */,
-				7E532AE4D068DD76C5114802E51BAC2A /* SnapKit-dummy.m in Sources */,
-				9832AA9F74E6B9134701DB57B5633BAA /* Typealiases.swift in Sources */,
-				81F624E47D7FD1AB83B702EEC7B89343 /* UILayoutSupport+Extensions.swift in Sources */,
+				4AD1C246CEA7773DDD10C1248429A776 /* Constraint.swift in Sources */,
+				F960F2C897633298F5F6D8F3647D224D /* ConstraintAttributes.swift in Sources */,
+				82D917BD06E74E2DBAE4ED95C13A6615 /* ConstraintConfig.swift in Sources */,
+				E22FD5516C1D355B2B62973637BE8D30 /* ConstraintConstantTarget.swift in Sources */,
+				F4BAB294F8901A9194C729FBC4711A8F /* ConstraintDescription.swift in Sources */,
+				766B22662EBB0F8ED1F0618569A3F4C0 /* ConstraintDSL.swift in Sources */,
+				B830A8ABD4C641ABDB0E49CFDB1030C3 /* ConstraintInsets.swift in Sources */,
+				E2A4E1342AB4B59931F00C0778842E55 /* ConstraintInsetTarget.swift in Sources */,
+				3A06A2E7DF98E826253D3077DD502EFC /* ConstraintItem.swift in Sources */,
+				B03B55888A7E94159B0C64F120F9A5CF /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				1CA67A814A3DD8491DE62785EFCFA2E1 /* ConstraintLayoutGuide.swift in Sources */,
+				27D188009068CDAD29A5B00F6BF5E59B /* ConstraintLayoutGuideDSL.swift in Sources */,
+				9BC1E34E3062022BCDAF140A66DB8C20 /* ConstraintLayoutSupport.swift in Sources */,
+				E04D2F0C860A83D474E432E0AD130380 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				1BF9C7CD8BF467D8DDA92976E9FE36C4 /* ConstraintMaker.swift in Sources */,
+				CCD9470243AA35944F15B8D8E498A79C /* ConstraintMakerEditable.swift in Sources */,
+				2F17454CE36C48525C49A423580FC62F /* ConstraintMakerExtendable.swift in Sources */,
+				659B03A003D6CA0EA06358494DAEC7C9 /* ConstraintMakerFinalizable.swift in Sources */,
+				D95D4C8E55A409F2B174B26FCA0BCBD3 /* ConstraintMakerPriortizable.swift in Sources */,
+				3CD6CDFF301C090E276F26BEE8D1B9B4 /* ConstraintMakerRelatable.swift in Sources */,
+				463C63E89EEF6B799F27C0F65FC537F7 /* ConstraintMultiplierTarget.swift in Sources */,
+				D62FC87A24B5F2EBA6F42F65A72320B3 /* ConstraintOffsetTarget.swift in Sources */,
+				02CB134B442AE71256883C7E2FD2B948 /* ConstraintPriority.swift in Sources */,
+				301FE59DD685E48464CB19118A6B1A65 /* ConstraintPriorityTarget.swift in Sources */,
+				D99FB388897874B6776064D485B02DE4 /* ConstraintRelatableTarget.swift in Sources */,
+				22B01C97E1B9D5FADC372631E9AB462A /* ConstraintRelation.swift in Sources */,
+				53D6C07A5F968510B9F72199DDC7E077 /* ConstraintView+Extensions.swift in Sources */,
+				53A560ED0C6912E04794CAD66D76A061 /* ConstraintView.swift in Sources */,
+				ECB6DAB85978B572978CE2FE5D8F2B84 /* ConstraintViewDSL.swift in Sources */,
+				F95E230ECC8B6CE9AB134DB0829875A4 /* Debugging.swift in Sources */,
+				D825F42A1C9634174E5089997B2B44CC /* LayoutConstraint.swift in Sources */,
+				169485CE3602F513915FC0F1B959DD83 /* LayoutConstraintItem.swift in Sources */,
+				436CC01F621C0C7894C6400A63197741 /* SnapKit-dummy.m in Sources */,
+				781E90AEEF6D14F95E340EA3B2B4510D /* Typealiases.swift in Sources */,
+				DC2B267D8E15AE2D0E06A270AE35C961 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C9B206FDE45EC8786DC53CBEDB255F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F96943B8AA81F664FE4A69451B1EE5D /* Pods-KeyboardKeyboard-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D58968AEF1AE61C0190E0472466CCEA1 /* PBXTargetDependency */ = {
+		5FFBD0275F00CE30E26FFF95CB15BC22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			target = 4903D068F92AE50341BC42AC6BB29FC8 /* AudioKit */;
+			targetProxy = 63871E07BA4C9478AA123C7CAE43445B /* PBXContainerItemProxy */;
+		};
+		AF9CDDB412B72FEB98982E80DFE18FA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
-			target = 59E802576401670094BBD0A6082EA093 /* SnapKit */;
-			targetProxy = 4AD3EA0CB469CEB8B28E70407F3AFB3E /* PBXContainerItemProxy */;
+			target = 366B76CD3FC3CCBB6F0441980BC8EA4C /* SnapKit */;
+			targetProxy = 15870E5DB2DF196098A102D09E82D146 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2606238F4DAD2A1E6FDC5489AD2C6797 /* Release */ = {
+		2CC4A9CABCA75AF6E9A352E02652A332 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13ACEEF146E8B616FE94D26A2813EC55 /* SnapKit.xcconfig */;
+			baseConfigurationReference = 6A7FDB3D6A7567A94672B383F285E5BA /* SnapKit.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -602,27 +652,114 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
 				PRODUCT_MODULE_NAME = SnapKit;
 				PRODUCT_NAME = SnapKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		46840EC6B775AE6E8FFF1159DD5EA0CF /* Debug */ = {
+		2E276B7877789F39256E71609A616659 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13ACEEF146E8B616FE94D26A2813EC55 /* SnapKit.xcconfig */;
+			baseConfigurationReference = B769A7174C0D58AF52ADB857FA812152 /* AudioKit.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3AFE1A15423E04D94B3679200FF9FB42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79790203246160D51E4C1C9CD7B5F7C /* Pods-KeyboardKeyboard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		451FDA89F79561FE6D756FD35D619B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F22C9449CC6C8DB7D21F039CD71FC5 /* Pods-KeyboardKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4AE6C599FD376CF83E95E92189CA79C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7FDB3D6A7567A94672B383F285E5BA /* SnapKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -636,24 +773,38 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
 				PRODUCT_MODULE_NAME = SnapKit;
 				PRODUCT_NAME = SnapKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		885072FBE917853E9C621EA32511C1DA /* Debug */ = {
+		50DA8F39E55A2431F275B134ABB16610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B769A7174C0D58AF52ADB857FA812152 /* AudioKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B02064D7E8BCDAC9B6D67691989B865B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -685,8 +836,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FC05650207F51715AE5AE6EDB1FAE9C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -707,177 +916,58 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		8AA78ABC2A99D7640145347EC6853F2E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2C79DBAEF0CE7A3C2F0699D828E6974 /* Pods-KeyboardKeyboard.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-KeyboardKeyboard/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DBC01DCA04789689520A03340085733C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5332784236B33A877067668180599B27 /* Pods-KeyboardKeyboard.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-KeyboardKeyboard/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "Target Support Files/Pods-KeyboardKeyboard/Pods-KeyboardKeyboard.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E574923E2959CFEF4FEBC7B272DBC6AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11AEEA4D390544D80793E82F5D2FDAA1 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46840EC6B775AE6E8FFF1159DD5EA0CF /* Debug */,
-				2606238F4DAD2A1E6FDC5489AD2C6797 /* Release */,
+				FC05650207F51715AE5AE6EDB1FAE9C3 /* Debug */,
+				B02064D7E8BCDAC9B6D67691989B865B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		7F62874C35AE2674095E5AF51C37ABE4 /* Build configuration list for PBXAggregateTarget "AudioKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				885072FBE917853E9C621EA32511C1DA /* Debug */,
-				E574923E2959CFEF4FEBC7B272DBC6AD /* Release */,
+				2E276B7877789F39256E71609A616659 /* Debug */,
+				50DA8F39E55A2431F275B134ABB16610 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F6D17B92B8B41E434A123024E3FB6CE /* Build configuration list for PBXNativeTarget "Pods-KeyboardKeyboard" */ = {
+		D66028A6576FBBF070A78DDBBF27B7D2 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBC01DCA04789689520A03340085733C /* Debug */,
-				8AA78ABC2A99D7640145347EC6853F2E /* Release */,
+				4AE6C599FD376CF83E95E92189CA79C0 /* Debug */,
+				2CC4A9CABCA75AF6E9A352E02652A332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3A2D37806E65D00F35E483C08D0B2ED /* Build configuration list for PBXNativeTarget "Pods-KeyboardKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451FDA89F79561FE6D756FD35D619B53 /* Debug */,
+				3AFE1A15423E04D94B3679200FF9FB42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
